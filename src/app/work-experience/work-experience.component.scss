@@ -1,0 +1,77 @@
+@use "../../styles.scss" as *;
+
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 35px 10%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+}
+
+.col .timeline-title {
+  padding: 50px 0px 20px 0px;
+}
+
+.col .timeline-content {
+  padding: 0px 30px;
+  border-left: 2px solid $borderColor;
+}
+
+.col .timeline-content .timeline-box {
+  position: relative;
+  padding: 20px;
+  border: 1px solid $borderColor;
+  background: $background;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+}
+
+.col .timeline-content .timeline-box:hover {
+  box-shadow: 0px 3px 12px 0px  $boxShadow;
+  border: 1px solid transparent;
+}
+
+.col .timeline-content .timeline-box::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  right: calc(100% + 20px);
+  top: -3px;
+  background-color: $backgroundSecondaryColor;
+  border: 2px solid $borderColor;
+}
+
+.timeline-box h4 {
+  font-size: 21px;
+}
+
+.timeline-box h3 {
+  font-size: 21px;
+  padding: 10px 6px 10px;
+}
+
+.timeline-box p {
+  line-height: 1.2;
+  font-size: 21px;
+}
+
+.timeline-box-key-notes {
+  display: flex;
+  font-size: 21px;
+}
+
+@media(max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+}

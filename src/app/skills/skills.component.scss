@@ -1,0 +1,120 @@
+@use "../../styles.scss" as *;
+
+.main{
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-top: 3px solid $borderColor;
+  border-bottom: 3px solid $borderColor;
+}
+
+.skills-main-div {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.skills-text-div {
+  margin-left: 50px;
+}
+
+.skills-main-div > * {
+  flex: 1;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.skills-inline img{
+  height: 48px;
+}
+
+.skills-heading {
+  font-size: 56px;
+  line-height: 50px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.list-title {
+  font-size: 28px;
+  margin-bottom: 18px;
+  font-weight: 410;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+.dev-icons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.skills-inline {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.skills-inline a img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.skills-inline a:hover img {
+  transform: scale(1.1); 
+}
+
+@media (min-width: 1380px) {
+  .skills-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .skills-heading {
+    font-size: 40px;
+  }
+  .skills-inline img{
+    height: 41px;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .skills-inline img{
+    height: 41px;
+  }
+
+  .skills-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .skills-main-div {
+    flex-direction: column;
+  }
+  .skills-text-div {
+    margin-left: 0px;
+    margin: 20px;
+  }
+  .skills-text {
+    font-size: 16px;
+  }
+  .skills-text-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+  .skills-image-div {
+    order: 2;
+  }
+
+}

@@ -1,0 +1,65 @@
+<div class="main">
+  <div class="skills-main-div">
+    <div class="skills-text-div">
+      <h1 class="skills-heading">
+        {{ skillsSectionHeading }}
+      </h1>
+      <div>
+        <h3 class="list-title">Backend Software Skills</h3>
+        <ul class="dev-icons">
+          @for (backendSoftwareSkill of backendSoftwareSkills; track backendSoftwareSkill.skillName) {
+          <li class="skills-inline">
+            <a [href]="backendSoftwareSkill.reference">
+              <img [src]="backendSoftwareSkill.badgeURL" [alt]="backendSoftwareSkill.skillName"/>
+            </a>
+          </li>
+          } @empty {
+          <li>There are no items.</li>
+          }
+        </ul>
+      </div>
+      <div>
+        <h3 class="list-title">Frontend Software Skills</h3>
+        <ul class="dev-icons">
+          @for (frontendSoftwareSkill of frontendSoftwareSkills; track frontendSoftwareSkill.skillName) {
+          <li class="skills-inline">
+            <a [href]="frontendSoftwareSkill.reference">
+              <img [src]="frontendSoftwareSkill.badgeURL" [alt]="frontendSoftwareSkill.skillName"/>
+            </a>
+          </li>
+          } @empty {
+          <li>There are no items.</li>
+          }
+        </ul>
+      </div>
+      <div>
+        <h3 class="list-title">Common Tools Skills</h3>
+        <ul class="dev-icons">
+          @for (toolSoftwareSkill of toolsSoftwareSkills; track toolSoftwareSkill.skillName) {
+          <li class="skills-inline">
+            <a [href]="toolSoftwareSkill.reference">
+              <img [src]="toolSoftwareSkill.badgeURL" [alt]="toolSoftwareSkill.skillName"/>
+            </a>
+          </li>
+          } @empty {
+          <li>There are no items.</li>
+          }
+        </ul>
+      </div>
+      <div>
+        <h3 class="list-title">Learning</h3>
+        <ul class="dev-icons">
+          @for (learningSkill of learning; track learningSkill.skillName) {
+          <li class="skills-inline">
+            <a [href]="learningSkill.reference">
+              <img [src]="learningSkill.badgeURL" [alt]="learningSkill.skillName"/>
+            </a>
+          </li>
+          } @empty {
+          <li>There are no items.</li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

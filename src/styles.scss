@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@forward "./sass/globals/global.scss";
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url("../public/fonts/Roboto-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font: 18px / 23px Roboto, "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  html, body {
+    line-height: normal;
+  }
+}
+
+::-webkit-scrollbar{
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fbc901;
+  border-radius: 100vw;
+}
