@@ -26,18 +26,17 @@
 }
 
 .skills-inline img{
-  height: 48px;
+  height: 38px;
 }
 
 .skills-heading {
-  font-size: 56px;
   line-height: 50px;
   margin-bottom: 40px;
   font-weight: 400;
 }
 
 .list-title {
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 18px;
   font-weight: 410;
 }
@@ -49,7 +48,7 @@
 .dev-icons {
   padding-left: 0;
   list-style: none;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: center;
@@ -70,29 +69,19 @@
   transform: scale(1.1); 
 }
 
-@media (min-width: 1380px) {
-  .skills-heading {
-    font-size: 40px;
-  }
-}
 
 @media (max-width: 1200px) {
-  .skills-heading {
-    font-size: 40px;
+  .skills-heading h2 {
+    font-size: 30px;
   }
   .skills-inline img{
-    height: 41px;
+    height: 31px;
   }
 }
 
 @media (max-width: 768px) {
   
-  .skills-inline img{
-    height: 41px;
-  }
-
   .skills-heading {
-    font-size: 30px;
     text-align: center;
   }
   .greeting-text-p {

@@ -27,7 +27,7 @@
 }
 
 .greeting-text {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1.1;
   color: $textColor !important;
   margin: auto;
@@ -86,7 +86,7 @@
 }
 
 .greeting-text-p {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 40px;
 }
 
@@ -105,7 +105,7 @@
   }
 
   .greeting-text {
-    font-size: 50px;
+    font-size: 40px;
   }
   .greeting-text-p {
     font-size: 20px;
@@ -142,7 +142,7 @@
   }
 
   .greeting-text {
-    font-size: 50px;
+    font-size: 40px;
   }
   .greeting-text-p {
     font-size: 20px;
@@ -163,11 +163,11 @@
     justify-content: space-around;
   }
   .greeting-text {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
   }
   .greeting-text-p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: normal;
     text-align: center;
   }
@@ -184,8 +184,16 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 475px) {
   .main {
     width: auto;
+  }
+
+  .greeting-text {
+    font-size: 21px;
+  }
+
+  .greeting-text-div a, img {
+    width: 300px;
   }
 }
