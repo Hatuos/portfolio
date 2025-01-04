@@ -30,13 +30,12 @@
 }
 
 .skills-heading {
-  line-height: 50px;
-  margin-bottom: 40px;
-  font-weight: 400;
+  font-size: 0.85em;
+  align-content: center;
 }
 
 .list-title {
-  font-size: 24px;
+  font-size: 1.34em;
   margin-bottom: 18px;
   font-weight: 410;
 }
@@ -71,9 +70,7 @@
 
 
 @media (max-width: 1200px) {
-  .skills-heading h2 {
-    font-size: 30px;
-  }
+  
   .skills-inline img{
     height: 31px;
   }
@@ -84,23 +81,12 @@
   .skills-heading {
     text-align: center;
   }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-  }
   .skills-main-div {
     flex-direction: column;
   }
   .skills-text-div {
     margin-left: 0px;
     margin: 20px;
-  }
-  .skills-text {
-    font-size: 16px;
-  }
-  .skills-text-subtitle {
-    font-size: 16px;
-    text-align: center;
   }
   .skills-image-div {
     order: 2;

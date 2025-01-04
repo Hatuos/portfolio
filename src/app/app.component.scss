@@ -6,28 +6,4 @@
   overflow-x: hidden;
   background-color: $background;
   color: $textColor;
-  transition: "0.1s";
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: $appHeaderBG;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(0.625rem + 2vmin);
-  color: $textColor;
-}
-
-.App-link {
-  color: $appLink;
-}
-
-.subTitle {
-  color: $subTitle;
 }

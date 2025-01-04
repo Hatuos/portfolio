@@ -50,23 +50,27 @@
   border: 2px solid $borderColor;
 }
 
+.experiences-heading {
+  font-size: 0.85em;
+}
+
 .timeline-box h4 {
-  font-size: 21px;
+  font-size: 1.15em;
 }
 
 .timeline-box h3 {
-  font-size: 21px;
+  font-size: 1.15em;
   padding: 10px 6px 10px;
 }
 
 .timeline-box p {
   line-height: 1.2;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 .timeline-box-key-notes {
   display: flex;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 @media(max-width: 768px) {

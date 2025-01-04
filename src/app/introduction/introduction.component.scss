@@ -26,8 +26,8 @@
   color: $subTitle !important;
 }
 
-.greeting-text {
-  font-size: 40px;
+.greeting-header {
+  font-size: 2.2em;
   line-height: 1.1;
   color: $textColor !important;
   margin: auto;
@@ -40,7 +40,7 @@
   margin-bottom: 0;
 }
 
-.css-typing p {
+.css-typing {
   width: 24ch;
   font-family: 'JetBrains Mono', monospace;
   border-right: .15em solid $borderColor;
@@ -86,7 +86,7 @@
 }
 
 .greeting-text-p {
-  font-size: 20px;
+  font-size: 1.05em;
   line-height: 40px;
 }
 
@@ -101,18 +101,11 @@
 @media (max-width: 1200px) {
 
   .greet-main {
-    margin-top:5rem;
+    margin-top:6em;
   }
 
-  .greeting-text {
-    font-size: 40px;
-  }
-  .greeting-text-p {
-    font-size: 20px;
-  }
   .greeting-main {
     display: block;
-
   }
   
   .greeting-image-div {
@@ -135,39 +128,15 @@
   }
 }
 
-@media (max-width: 1000px) {
-
-  .greet-main {
-    margin-top:5rem;
-  }
-
-  .greeting-text {
-    font-size: 40px;
-  }
-  .greeting-text-p {
-    font-size: 20px;
-  }
-  .greeting-main {
-    display: block;
-  }
-  
-}
-
 @media (max-width: 768px) {
-
-  .greet-main {
-    margin-top:5rem;
-  }
   
   .button-greeting-div {
     justify-content: space-around;
   }
-  .greeting-text {
-    font-size: 40px;
+  .greeting-header {
     text-align: center;
   }
   .greeting-text-p {
-    font-size: 20px;
     line-height: normal;
     text-align: center;
   }
@@ -184,16 +153,22 @@
   }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 574px) {
   .main {
     width: auto;
   }
 
-  .greeting-text {
-    font-size: 21px;
+  .greeting-header {
+    font-size: 1.5em;
   }
 
   .greeting-text-div a, img {
     width: 300px;
+  }
+}
+
+@media (max-width: 385px) {
+  .greeting-header {
+    font-size: 1.15em;
   }
 }

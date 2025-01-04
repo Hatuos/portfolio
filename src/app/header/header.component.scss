@@ -37,7 +37,7 @@ $mobile-breakpoint: 767px;
   }
 
   @media (max-width: $mobile-breakpoint) {
-    height: 2.5rem;
+    height: 3em;
   }
 
  .menu {
@@ -50,7 +50,7 @@ $mobile-breakpoint: 767px;
 
     @media (max-width: $mobile-breakpoint) {
       position: fixed;
-      top: 2.7rem;
+      top: 3.18em;
       right: -250px;
       height: 100vh;
       width: 250px;
@@ -74,7 +74,7 @@ $mobile-breakpoint: 767px;
         padding: 25px 30px;
         text-decoration: none;
         color: $textColor;
-        font-size: 0.92em;
+        font-size: 0.93em;
 
         &:hover,
         &:focus {
@@ -92,8 +92,8 @@ $mobile-breakpoint: 767px;
     @media (max-width: $mobile-breakpoint) {
       display: block;
       position: absolute;
-      top: 20px;
-      right: 3.8rem;
+      top: 1.5em;
+      right: 3em;
       cursor: pointer;
       transform: scale(0.95);
 
@@ -138,7 +138,7 @@ $mobile-breakpoint: 767px;
     }
   }
 
-  @media (min-width: ($mobile-breakpoint + 1)) {
+  @media (min-width: $mobile-breakpoint) {
     display: flex;
     align-items: center;
     justify-content: space-between;
