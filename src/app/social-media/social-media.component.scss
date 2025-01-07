@@ -1,11 +1,11 @@
 @use "../../styles.scss" as *;
 
 .social-media-div {
-  font-size: 1.1em;
+  font-size: clamp(1.1em, 1.3vw, 2.5em);
   display: flex;
   justify-content: center;
   padding: 20px 20px 20px;
-  border: 3px solid $borderColor;
+  border: 2.5px solid $borderColor;
 }
 
  i {

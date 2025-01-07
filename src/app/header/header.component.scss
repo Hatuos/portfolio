@@ -14,7 +14,8 @@ $mobile-breakpoint: 767px;
   width: 100%;
   z-index: 1000;
   background-color: $background;
-  border-bottom: 3px solid $borderColor;
+  border-bottom: 2.5px solid $borderColor;
+  height: clamp(2.7em, 5vw, 5em);
   @include smooth-transition(transform);
 
   &.hidden {
@@ -27,6 +28,7 @@ $mobile-breakpoint: 767px;
 
   .logo {
     font-size: 1.35em;
+    font-size: clamp(1.35em, 1.5vw, 3em);
     margin: 20px 30px;
     font-weight: bold;
     text-decoration: none;
@@ -34,10 +36,6 @@ $mobile-breakpoint: 767px;
     @media (max-width: $mobile-breakpoint) {
       display: none;
     }
-  }
-
-  @media (max-width: $mobile-breakpoint) {
-    height: 3em;
   }
 
  .menu {
@@ -50,12 +48,12 @@ $mobile-breakpoint: 767px;
 
     @media (max-width: $mobile-breakpoint) {
       position: fixed;
-      top: 3.18em;
+      top: 2.8em;
       right: -250px;
       height: 100vh;
       width: 250px;
       background-color: $background;
-      border-left: 3px solid $borderColor;
+      border-left: 2.5px solid $borderColor;
       flex-direction: column;
       padding-top: 40px;
       overflow-y: auto;
@@ -71,10 +69,10 @@ $mobile-breakpoint: 767px;
 
       a {
         display: block;
-        padding: 25px 30px;
+        padding: 20px 25px;
         text-decoration: none;
         color: $textColor;
-        font-size: 0.93em;
+        font-size: clamp(0.9em, 1.2vw, 2.2em);
 
         &:hover,
         &:focus {
@@ -92,21 +90,21 @@ $mobile-breakpoint: 767px;
     @media (max-width: $mobile-breakpoint) {
       display: block;
       position: absolute;
-      top: 1.5em;
+      top: 1.35rem;
       right: 3em;
       cursor: pointer;
       transform: scale(0.95);
 
       .navicon {
         background: $textColor;
-        position: relative;
+        position: absolute;
         @include smooth-transition(all);
 
         &:before,
         &:after {
           content: "";
           display: block;
-          height: 2px;
+          height: 2.5px;
           background: $textColor;
           position: absolute;
           width: 28px;

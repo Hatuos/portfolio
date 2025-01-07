@@ -1,4 +1,4 @@
-<div class="container">
+<div class="experience-main">
   <header class="experiences-heading">
     <h1>
       {{ experiences.myJourneyHeader }}
@@ -14,8 +14,8 @@
       <div class="timeline-content">
         @for (experience of experiences.academicExperience; track experience.centerName) {
         <div class="timeline-box" (click)="openLink(experience.centerLink)">
-          <h4>{{ experience.desc }}</h4>
-          <h3>{{ experience.centerName }}</h3>
+          <h3>{{ experience.desc }}</h3>
+          <h4>{{ experience.centerName }}</h4>
           <p>{{ experience.keyNotes }}</p>
         </div>
         }
@@ -31,8 +31,8 @@
       <div class="timeline-content">
         @for (experience of experiences.workExperience; track experience.companyName) {
         <div class="timeline-box" (click)="openLink(experience.companyLink)">
-          <h4>{{ experience.role }}</h4>
-          <h3>{{ experience.companyName }}</h3>
+          <h3>{{ experience.role }}</h3>
+          <h4>{{ experience.companyName }}</h4>
           @for (keyNotes of experience.keyNotes; track keyNotes) {
           <ul class="timeline-box-key-notes">
             <li>{{ keyNotes }}</li>

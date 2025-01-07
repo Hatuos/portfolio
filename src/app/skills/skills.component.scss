@@ -1,6 +1,6 @@
 @use "../../styles.scss" as *;
 
-.main{
+.skills-main{
   width: 90%;
   padding: 20px 10px;
   margin: 0 auto;
@@ -26,16 +26,16 @@
 }
 
 .skills-inline img{
-  height: 38px;
+  height: clamp(1.85em, 1.9vw, 4em);
 }
 
 .skills-heading {
-  font-size: 0.85em;
+  font-size: clamp(0.65em, 1.1vw, 3em);
   align-content: center;
 }
 
 .list-title {
-  font-size: 1.34em;
+  font-size: clamp(1.1em, 1vw, 2.8em);
   margin-bottom: 18px;
   font-weight: 410;
 }
@@ -47,7 +47,6 @@
 .dev-icons {
   padding-left: 0;
   list-style: none;
-  font-size: 2.5rem;
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: center;
@@ -66,14 +65,6 @@
 
 .skills-inline a:hover img {
   transform: scale(1.1); 
-}
-
-
-@media (max-width: 1200px) {
-  
-  .skills-inline img{
-    height: 31px;
-  }
 }
 
 @media (max-width: 768px) {

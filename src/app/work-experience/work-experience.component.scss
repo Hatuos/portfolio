@@ -1,11 +1,11 @@
 @use "../../styles.scss" as *;
 
-.container {
+.experience-main {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  padding: 35px 10%;
+  padding: 35px 7%;
 }
 
 .row {
@@ -51,26 +51,30 @@
 }
 
 .experiences-heading {
-  font-size: 0.85em;
+  font-size: clamp(0.65em, 1.1vw, 3em);
 }
 
-.timeline-box h4 {
-  font-size: 1.15em;
+.timeline-title h2 {
+  font-size: clamp(1.2em, 1.2vw, 2.8em);
 }
 
 .timeline-box h3 {
-  font-size: 1.15em;
+  font-size: clamp(1em, 1vw, 2.8em);
   padding: 10px 6px 10px;
+}
+
+.timeline-box h4 {
+  font-size: clamp(0.95em, 1vw, 2.8em);
 }
 
 .timeline-box p {
   line-height: 1.2;
-  font-size: 1em;
+  font-size: clamp(0.85em, 1vw, 2.8em);
 }
 
 .timeline-box-key-notes {
   display: flex;
-  font-size: 1em;
+  font-size: clamp(0.85em, 1vw, 2.8em);
 }
 
 @media(max-width: 768px) {

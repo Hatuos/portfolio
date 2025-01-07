@@ -1,11 +1,5 @@
 @use "../../styles.scss" as *;
 
-.main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-}
-
 .greet-main {
   width: 90%;
   padding: 20px 10px;
@@ -27,25 +21,24 @@
 }
 
 .greeting-header {
-  font-size: 2.2em;
+  font-size: clamp(1.12em, 3.2vw, 5em);
   line-height: 1.1;
   color: $textColor !important;
   margin: auto;
   align-content: center;
 }
 
-.css-typing {
-  width: 24ch;
-  overflow: hidden;
-  margin-bottom: 0;
+.typing-image {
+  height:  clamp(1.12em, 3.2vw, 5em);
 }
 
 .css-typing {
   width: 24ch;
+  overflow: hidden;
+  margin-bottom: 0;
   font-family: 'JetBrains Mono', monospace;
   border-right: .15em solid $borderColor;
   white-space: nowrap;
-  overflow: hidden;
   -webkit-animation: type 2s steps(24, end), blink .5s step-end infinite alternate;
   animation: type 2s steps(24, end), blink .5s step-end infinite alternate;
   -webkit-animation-delay: 2s;
@@ -58,7 +51,7 @@
     opacity: 1;
   }
   to {
-    width: 100%;
+    width: 24ch;
     opacity: 1;
   }
 }
@@ -86,7 +79,7 @@
 }
 
 .greeting-text-p {
-  font-size: 1.05em;
+  font-size: clamp(1.05em, 1.25vw, 2.5em);
   line-height: 40px;
 }
 
@@ -101,7 +94,7 @@
 @media (max-width: 1200px) {
 
   .greet-main {
-    margin-top:6em;
+    margin-top:5em;
   }
 
   .greeting-main {
@@ -153,22 +146,12 @@
   }
 }
 
-@media (max-width: 574px) {
+@media (max-width: 590px) {
   .main {
     width: auto;
   }
 
-  .greeting-header {
-    font-size: 1.5em;
-  }
-
   .greeting-text-div a, img {
     width: 300px;
-  }
-}
-
-@media (max-width: 385px) {
-  .greeting-header {
-    font-size: 1.15em;
   }
 }
