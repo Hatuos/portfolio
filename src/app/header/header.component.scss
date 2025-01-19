@@ -1,6 +1,6 @@
 @use "../../styles.scss" as *;
 
-$transition-duration: 0.3s;
+$transition-duration: 0.25s;
 $mobile-breakpoint: 767px;
 
 @mixin smooth-transition($properties...) {
@@ -126,6 +126,7 @@ $mobile-breakpoint: 767px;
         &:before {
           transform: rotate(-45deg);
           top: 0;
+        
         }
 
         &:after {

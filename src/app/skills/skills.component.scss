@@ -61,6 +61,8 @@
 .skills-inline a img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 8px;
+  backface-visibility: hidden;
+  will-change: transform;
 }
 
 .skills-inline a:hover img {

@@ -145,9 +145,14 @@ const myJourney = {
       role: 'Student',
       centerName: 'University of La Laguna',
       centerLink: "https://www.ull.es/",
+      date: 2023,
       desc: 'Computer engineering degree',
-      keyNotes: [
+      certificationDescription: [
         'Higher university degree with specialization in software engineering'
+      ], 
+      keyNotes: [
+        'C, C++, Java, Javascript, Python, Ruby, Assembler, R, Matlab',
+        'Development outside specific frameworks. Software development fundamentals are prioritized.'
       ]
     }
   ],
@@ -156,9 +161,12 @@ const myJourney = {
       role: 'FullStack Developer',
       companyName: 'Plexus Tech',
       companyLink: "https://www.plexus.es/en/",
-      desc: '',
+      date: '2023 - Present',
+      workDescription: [
+        'Fullstack developer for the development and maintenance of service-oriented applications.'
+      ],
       keyNotes: [
-        'Java Jakarta EE Application Development and Maintenance',
+        'Jakarta EE / Spring application development and maintenance',
         'Angular application development and maintenance'
       ]
     }

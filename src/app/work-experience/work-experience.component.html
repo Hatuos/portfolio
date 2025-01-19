@@ -14,9 +14,31 @@
       <div class="timeline-content">
         @for (experience of experiences.academicExperience; track experience.centerName) {
         <div class="timeline-box" (click)="openLink(experience.centerLink)">
-          <h3>{{ experience.desc }}</h3>
-          <h4>{{ experience.centerName }}</h4>
-          <p>{{ experience.keyNotes }}</p>
+          <div class="timeline-box-description" >
+            <h3>{{ experience.desc }}</h3>
+            <h4>
+              <a href="experience.centerLink">{{ experience.centerName }}</a>
+            </h4>
+            <h5>{{ experience.date }}</h5>
+          </div>
+          <div class="timeline-box-list">
+            <ul>
+              <h5>Certification Description</h5>
+              @for (certificationDescription of experience.certificationDescription; track certificationDescription) {
+              <ul class="timeline-box-keynotes">
+                <li>{{ certificationDescription }}</li>
+              </ul>
+              }
+            </ul>
+            <ul>
+              <h5>Technologies and Languages</h5>
+              @for (keyNotes of experience.keyNotes; track keyNotes) {
+              <ul class="timeline-box-keynotes">
+                <li>{{ keyNotes }}</li>
+              </ul>
+              }
+            </ul>
+          </div>
         </div>
         }
       </div>
@@ -29,15 +51,34 @@
         </h2>
       </header>
       <div class="timeline-content">
-        @for (experience of experiences.workExperience; track experience.companyName) {
+        @for (experience of experiences.workExperience; track
+        experience.companyName) {
         <div class="timeline-box" (click)="openLink(experience.companyLink)">
-          <h3>{{ experience.role }}</h3>
-          <h4>{{ experience.companyName }}</h4>
-          @for (keyNotes of experience.keyNotes; track keyNotes) {
-          <ul class="timeline-box-key-notes">
-            <li>{{ keyNotes }}</li>
-          </ul>
-          }
+          <div class="timeline-box-description">
+            <h3>{{ experience.role }}</h3>
+            <h4>
+              <a href="experience.companyLink">{{ experience.companyName }}</a>
+            </h4>
+            <h5>{{ experience.date }}</h5>
+          </div>
+          <div class="timeline-box-list">
+            <ul>
+              <h5>Core Functionality</h5>
+              @for (workDescription of experience.workDescription; track workDescription) {
+              <ul class="timeline-box-keynotes">
+                <li>{{ workDescription }}</li>
+              </ul>
+              }
+            </ul>
+            <ul>
+              <h5>Technologies and Language</h5>
+              @for (keyNotes of experience.keyNotes; track keyNotes) {
+              <ul class="timeline-box-keynotes">
+                <li>{{ keyNotes }}</li>
+              </ul>
+              }
+            </ul>
+          </div>
         </div>
         }
       </div>

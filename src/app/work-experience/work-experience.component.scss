@@ -5,37 +5,37 @@
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  padding: 35px 7%;
+  padding: 35px 6%;
 }
 
 .row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   column-gap: 25px;
 }
 
-.col .timeline-title {
+.experiences-heading {
+  font-size: clamp(0.65em, 1.1vw, 3em);
+}
+
+.timeline-title {
   padding: 50px 0px 20px 0px;
 }
 
 .col .timeline-content {
-  padding: 0px 30px;
+  padding: 0px 20px;
   border-left: 2px solid $borderColor;
 }
 
 .col .timeline-content .timeline-box {
   position: relative;
-  padding: 20px;
-  border: 1px solid $borderColor;
   background: $background;
   cursor: pointer;
   transition: all 0.4s;
-  margin-bottom: 20px;
 }
 
 .col .timeline-content .timeline-box:hover {
-  box-shadow: 0px 3px 12px 0px  $boxShadow;
-  border: 1px solid transparent;
+  box-shadow: 0px 0px 12px 0px  $boxShadow;
 }
 
 .col .timeline-content .timeline-box::before {
@@ -44,14 +44,23 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  right: calc(100% + 20px);
+  right: calc(100% + 9px);
   top: -3px;
   background-color: $backgroundSecondaryColor;
   border: 2px solid $borderColor;
 }
 
-.experiences-heading {
-  font-size: clamp(0.65em, 1.1vw, 3em);
+.timeline-box {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.timeline-box-description {
+  flex-direction: column;
+  flex: 1;
+  align-content: center;
+  white-space: nowrap;
+  border: 2px solid $borderColor;
 }
 
 .timeline-title h2 {
@@ -59,27 +68,44 @@
 }
 
 .timeline-box h3 {
-  font-size: clamp(1em, 1vw, 2.8em);
-  padding: 10px 6px 10px;
+  font-size: clamp(0.8em, 1.2vw, 2.8em);
 }
 
 .timeline-box h4 {
-  font-size: clamp(0.95em, 1vw, 2.8em);
+  font-size: clamp(0.75em, 1.2vw, 2.8em);
 }
 
-.timeline-box p {
+.timeline-box h5 {
+  font-size: clamp(0.75em, 1.2vw, 2.8em);
+}
+
+.timeline-box a {
+  color: $borderColor;
+}
+
+.timeline-box li {
   line-height: 1.2;
   font-size: clamp(0.85em, 1vw, 2.8em);
 }
 
-.timeline-box-key-notes {
-  display: flex;
+.timeline-box-list {
+  text-align: left;
+  list-style: none;
+  flex: 2;
+  border: 2px solid $borderColor;
+  padding-right: 8px;
   font-size: clamp(0.85em, 1vw, 2.8em);
 }
 
+.timeline-box-keynotes {
+  list-style: square;
+  margin: 10px 0;
+}
+
 @media(max-width: 768px) {
-  .row {
-    grid-template-columns: 1fr;
+
+  .timeline-box {
+    flex-direction: column;
   }
 
 }
