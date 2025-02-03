@@ -5,7 +5,10 @@
   } 
   @if (information.skillsSection.display) {
     <app-skills id="skills"></app-skills>
-  } 
+  }
+  @if (information.projectsSection.display) {
+    <app-projects id="projects"></app-projects>
+  }
   @if (information.myJourney.display) {
     <app-work-experience id="my-journey"></app-work-experience>
   }

@@ -3,8 +3,8 @@ Certain colors are used for different and multiply types of elements.
 For greater control over colors visit each components .scss file. */
 
 // button colors
-$buttonColor: #F0A500;
-$buttonHover: #F0A500;
+$buttonColor: #f8b400;
+$buttonHover: #f8b400;
 
 // text
 $textColor: #F5F5F5;
@@ -12,22 +12,23 @@ $subTitle: #F5F5F5;
 $appLink: #F5F5F5;
 
 // box shadows
-$boxShadow: #F0A500;
+$boxShadow: #f8b400;
 
 
 // borders
 $progressBarBackground: rgb(243, 239, 239);
-$borderColor: #F0A500;
+$borderColor: #f8b400;
 
 // hovers
 $headerHoverBG: #8c43ce;
 $contactDetailHoverTS: #b5b5b5;
-$socialMediaHoverBG:#b99606;
+$socialMediaHoverBG:#f8b400;
 
 // backgrounds
-$background: #141414;
-$backgroundSecondaryColor: #F0A500;
-$appHeaderBG: #282c34;
+$background: #1c1c20;
+$backgroundSecondaryColor: #f8b400;
+$appHeaderBG: #f8b400;
+$appHeaderTextColor: #1c1c20;
 
 // social media icons
 $linkedin: #0e76a8;

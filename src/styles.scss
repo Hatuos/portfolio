@@ -3,7 +3,9 @@
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"),
-    url("../public/fonts/Roboto-Regular.ttf") format("ttf");
+    url("../public/fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-size: normal;
   font-display: swap;
 }
 
@@ -14,8 +16,8 @@ code {
 html, body {
   scroll-behavior: smooth;
   margin: 0;
-  background: #141414;
-  font: 18px / 23px Roboto, "Roboto", sans-serif;
+  background: #1A1A1D;
+  font: 20px / 23px Roboto, "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { introduction, myJourney, skillsSection, socialMediaLinks } from '../../../data';
+import { introduction, myJourney, projectsSection, skillsSection, socialMediaLinks } from '../../../data';
 import { trigger, style, query, transition, stagger, animate } from '@angular/animations';
 
 @Component({
@@ -26,13 +26,13 @@ import { trigger, style, query, transition, stagger, animate } from '@angular/an
 export class HeaderComponent {
   
   greeting = introduction;
-  information = { introduction, socialMediaLinks, skillsSection, myJourney }
+  information = { introduction, socialMediaLinks, skillsSection, projectsSection, myJourney }
 
   scrollToSection(event: Event, section: string) {
     event.preventDefault(); 
     const element = document.getElementById(section);
     if (element) {
-      const yOffset = -100;
+      const yOffset = -50;
       const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
       window.scrollTo({ top: y, behavior: 'smooth' });
     }

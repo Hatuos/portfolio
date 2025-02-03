@@ -18,7 +18,12 @@
     <li>
       <a (click)="scrollToSection($event, 'skills')">Skills</a>
     </li>
-    } 
+    }
+    @if (information.projectsSection.display) {
+    <li>
+      <a (click)="scrollToSection($event, 'projects')">Projects</a>
+    </li>
+    }
     @if (information.myJourney.display) {
     <li>
       <a (click)="scrollToSection($event, 'my-journey')">My Journey</a>

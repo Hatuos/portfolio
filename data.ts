@@ -1,6 +1,6 @@
 const introduction = {
     username: 'Hatuos',
-    title: 'I\'m Hatuos.',
+    title: 'Hello World!',
     welcomeAvatar: "img/profileImage.png",
     subTitle:
     `I\'m looking to collaborate on whatever helps me learn.
@@ -172,5 +172,35 @@ const myJourney = {
     }
   ]
 };
+
+const projectsSection = {
+  display: true,
+  title: 'Projects',
+  githubProjectsLink: 'https://github.com/Hatuos',
+  projects: [
+    {
+      title: 'Project Tittle 1',
+      description: 'Example project 1 serves for things X and Y, along with the implementation of Z.',
+      image: "img/exampleProjectImage.png",
+      link: 'https://github.com/Hatuos',
+      projectTags: ['Angular', 'Typescript']
+    },
+    {
+      title: 'Project Tittle 2',
+      description: 'Example project 2 serves for things X and Y, along with the implementation of Z.',
+      image: "img/exampleProjectImage.png",
+      link: 'https://github.com/Hatuos',
+      projectTags: ['Java', 'Spring','Spring Boot']
+    },
+    {
+      title: 'Project Tittle 3',
+      description: 'Example project 3 serves for things X and Y, along with the implementation of Z.',
+      image: "img/exampleProjectImage.png",
+      link: 'https://github.com/Hatuos',
+      projectTags: ['Python', 'Pandas','Data Science']
+    }
+  ]
+
+}
   
-export { introduction, socialMediaLinks, skillsSection, myJourney };
+export { introduction, socialMediaLinks, skillsSection, myJourney, projectsSection};

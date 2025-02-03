@@ -26,6 +26,10 @@
   color: $textColor !important;
   margin: auto;
   align-content: center;
+
+  span {
+    color: $backgroundSecondaryColor;
+  }
 }
 
 .typing-image {
@@ -153,5 +157,11 @@
 
   .greeting-text-div a, img {
     width: 300px;
+  }
+}
+
+@media (max-width: 392px) {
+  .greeting-image-div {
+    min-width: 280px;
   }
 }
