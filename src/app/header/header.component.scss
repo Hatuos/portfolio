@@ -72,6 +72,7 @@ $mobile-breakpoint: 767px;
         padding: clamp(0.88em, 1.2vw, 2.2em) 25px;
         text-decoration: none;
         color: $textColor;
+        border-radius: 30px;
         font-size: clamp(0.9em, 1.2vw, 2.2em);
 
         &:hover,
