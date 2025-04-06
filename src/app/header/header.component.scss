@@ -55,7 +55,6 @@ $mobile-breakpoint: 767px;
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-right: 10px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -80,6 +79,7 @@ $mobile-breakpoint: 767px;
 
     li {
       text-align: center;
+      padding-right: 10px;
 
       a {
         display: block;
