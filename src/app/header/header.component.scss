@@ -27,14 +27,27 @@ $mobile-breakpoint: 767px;
   }
 
   .logo {
-    font-size: 1.35em;
-    font-size: clamp(1.35em, 1.5vw, 3em);
+    font-size: clamp(1.4em, 1.8vw, 3em);
+    font-family: 'Amita';
     margin: 20px 30px;
     font-weight: bold;
     text-decoration: none;
     color: $textColor;
+    transition: all 0.3s ease;
     @media (max-width: $mobile-breakpoint) {
       display: none;
+    }
+    
+    .logo-name {
+      font-family: 'Megrim';
+      transition: all 0.3s ease;
+    }
+  }
+
+  .logo:hover {
+    transform: scale(1.1);
+    .logo-name {
+      color: $backgroundSecondaryColor;
     }
   }
 
@@ -42,6 +55,7 @@ $mobile-breakpoint: 767px;
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-right: 10px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -72,7 +86,7 @@ $mobile-breakpoint: 767px;
         padding: clamp(0.88em, 1.2vw, 2.2em) 25px;
         text-decoration: none;
         color: $textColor;
-        border-radius: 30px;
+        border-radius: 10px;
         font-size: clamp(0.9em, 1.2vw, 2.2em);
 
         &:hover,

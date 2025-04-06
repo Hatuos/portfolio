@@ -35,12 +35,12 @@
         </ul>
       </div>
       <div>
-        <h2 class="list-title">Common Tools Skills</h2>
+        <h2 class="list-title">Database Skills</h2>
         <ul class="dev-icons">
-          @for (toolSoftwareSkill of toolsSoftwareSkills; track toolSoftwareSkill.skillName) {
+          @for (databaseSkill of databaseSkills; track databaseSkill.skillName) {
           <li class="skills-inline">
-            <a [href]="toolSoftwareSkill.reference">
-              <img [src]="toolSoftwareSkill.badgeURL" [alt]="toolSoftwareSkill.skillName"/>
+            <a [href]="databaseSkill.reference">
+              <img [src]="databaseSkill.badgeURL" [alt]="databaseSkill.skillName"/>
             </a>
           </li>
           } @empty {
@@ -49,12 +49,12 @@
         </ul>
       </div>
       <div>
-        <h2 class="list-title">Learning</h2>
+        <h2 class="list-title">Common Tools Skills</h2>
         <ul class="dev-icons">
-          @for (learningSkill of learning; track learningSkill.skillName) {
+          @for (toolSoftwareSkill of toolsSoftwareSkills; track toolSoftwareSkill.skillName) {
           <li class="skills-inline">
-            <a [href]="learningSkill.reference">
-              <img [src]="learningSkill.badgeURL" [alt]="learningSkill.skillName"/>
+            <a [href]="toolSoftwareSkill.reference">
+              <img [src]="toolSoftwareSkill.badgeURL" [alt]="toolSoftwareSkill.skillName"/>
             </a>
           </li>
           } @empty {

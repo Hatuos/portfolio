@@ -1,5 +1,5 @@
 const introduction = {
-    username: 'Hatuos',
+    username: 'Samir',
     title: 'Hello World!',
     welcomeAvatar: "img/profileImage.png",
     subTitle:
@@ -22,7 +22,7 @@ const skillsSection = {
   backendSoftwareSkills: [
     {
       skillName: 'Java',
-      badgeURL : 'https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=Java&logoColor=white',
+      badgeURL : 'https://img.shields.io/badge/Jakarta_EE-%23ED8B00.svg?style=for-the-badge&logo=Java&logoColor=white',
       reference: 'https://www.oracle.com/java/'
     },
     {
@@ -34,6 +34,11 @@ const skillsSection = {
       skillName: 'SpringBoot',
       badgeURL : 'https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot',
       reference: 'https://spring.io/projects/spring-boot'
+    },
+    {
+      skillName: 'Python',
+      badgeURL : 'https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue',
+      reference: 'https://www.python.org/'
     },
     {
       skillName: 'C',
@@ -54,13 +59,8 @@ const skillsSection = {
     },
     {
       skillName: 'css',
-      badgeURL : 'https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white',
+      badgeURL : 'https://img.shields.io/badge/CSS-323330?style=for-the-badge&logo=css3&logoColor=white',
       reference: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
-    },
-    {
-      skillName: 'JavaScript',
-      badgeURL : 'https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E',
-      reference: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
     },
     {
       skillName: 'TypeScript',
@@ -78,58 +78,48 @@ const skillsSection = {
       reference: 'https://angular.dev/'
     }
   ],
-  toolsSoftwareSkills: [
-    {
-      skillName: 'GitHub',
-      badgeURL : 'https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white',
-      reference: 'https://github.com/'
-    },
-    {
-      skillName: 'GitLab',
-      badgeURL : 'https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white',
-      reference: 'https://about.gitlab.com/'
-    },
-    {
-      skillName: 'IntelliJ IDEA',
-      badgeURL : 'https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white',
-      reference: 'https://www.jetbrains.com/idea/'
-    },
-    {
-      skillName: 'Visual Studio Code',
-      badgeURL : 'https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white',
-      reference: 'https://code.visualstudio.com/'
-    },
+  databaseSkills: [
     {
       skillName: 'DBeaver',
       badgeURL : 'https://img.shields.io/badge/dbeaver-382923?style=for-the-badge&logo=dbeaver&logoColor=white',
       reference: 'https://dbeaver.io/'
     },
     {
-      skillName: 'SonarQube',
-      badgeURL : 'https://img.shields.io/badge/Sonarqube-5190cf?style=for-the-badge&logo=sonarqube&logoColor=white',
-      reference: 'https://www.sonarsource.com/'
+      skillName: 'MySQL',
+      badgeURL : 'https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white',
+      reference: 'https://www.mysql.com/'
+    },
+    {
+      skillName: 'Oracle',
+      badgeURL : 'https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white',
+      reference: 'https://www.oracle.com/'
     }
   ],
-  learning: [
+  toolsSoftwareSkills: [
     {
-      skillName: 'Spring',
-      badgeURL : 'https://img.shields.io/badge/Spring-F2F4F9?style=for-the-badge&logo=spring',
-      reference: 'https://spring.io/'
+      skillName: 'Git',
+      badgeURL : 'https://img.shields.io/badge/Git-330F63?style=for-the-badge&logo=gitlab&logoColor=white',
+      reference: 'https://github.com/'
     },
     {
-      skillName: 'SpringBoot',
-      badgeURL : 'https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot',
-      reference: 'https://spring.io/projects/spring-boot'
+      skillName: 'IntelliJ IDEA',
+      badgeURL : 'https://img.shields.io/badge/IntelliJ-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white',
+      reference: 'https://www.jetbrains.com/idea/'
     },
     {
-      skillName: 'Angular',
-      badgeURL : 'https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white',
-      reference: 'https://angular.dev/'
+      skillName: 'Visual Studio Code',
+      badgeURL : 'https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white',
+      reference: 'https://code.visualstudio.com/'
     },
     {
-      skillName: 'Python',
-      badgeURL : 'https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue',
-      reference: 'https://www.python.org/'
+      skillName: 'SonarQube',
+      badgeURL : 'https://img.shields.io/badge/Sonar-5190cf?style=for-the-badge&logo=sonarqube&logoColor=white',
+      reference: 'https://www.sonarsource.com/'
+    },
+    {
+      skillName: 'CicleCI',
+      badgeURL : 'https://img.shields.io/badge/circle%20ci-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white',
+      reference: 'https://circleci.com/'
     }
   ],
   display: true

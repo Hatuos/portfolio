@@ -13,7 +13,7 @@ export class SkillsComponent {
   skillsSection = skillsSection;
   backendSoftwareSkills = skillsSection.backendSoftwareSkills;
   frontendSoftwareSkills = skillsSection.frontendSoftwareSkills;
-  learning = skillsSection.learning;
+  databaseSkills = skillsSection.databaseSkills;
   toolsSoftwareSkills = skillsSection.toolsSoftwareSkills;
   skillsSectionHeading = skillsSection.softwareSkillsHeader;
 

@@ -1,15 +1,41 @@
-<div class="App">
+<section class="loadingPage" [@fadeInOut]="loadingPageState">
+  @if (loadingPageState == "visible") { 
+    <div class='body'>
+      <span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <div class='base'>
+        <span></span>
+        <div class='face'></div>
+      </div>
+    </div>
+    <div class='longfazers'>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1>Tumbling down the rabbit hole</h1>
+  }
+</section>
+
+<div class="App" [@fadeInOut]="appPageState">
   <app-header></app-header>
-  @if (information.introduction.display) {
-    <app-introduction id="about-me" class="App"></app-introduction>
-  } 
-  @if (information.skillsSection.display) {
-    <app-skills id="skills"></app-skills>
-  }
-  @if (information.projectsSection.display) {
-    <app-projects id="projects"></app-projects>
-  }
-  @if (information.myJourney.display) {
-    <app-work-experience id="my-journey"></app-work-experience>
+  @if (appPageState == "visible") {
+    @if (information.introduction.display) {
+      <app-introduction id="about-me" class="App"></app-introduction>
+    } 
+    @if (information.skillsSection.display) {
+      <app-skills id="skills"></app-skills>
+    }
+    @if (information.projectsSection.display) {
+      <app-projects id="projects"></app-projects>
+    }
+    @if (information.myJourney.display) {
+      <app-work-experience id="my-journey"></app-work-experience>
+    }
   }
 </div>
