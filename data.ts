@@ -4,7 +4,7 @@ const introduction = {
     welcomeAvatar: "img/profileImage.png",
     subTitle:
     `I\'m looking to collaborate on whatever helps me learn.
-    Ask me about whatever you want related to computer engineering, I may not know how to answer you but I'm sure I'll learn something.`,
+    Ask me about whatever you want related to computer engineering, I may not know the answer but I'm sure I'll learn something.`,
     resumeLink:
       '-----',
     display: true

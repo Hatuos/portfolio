@@ -1,12 +1,12 @@
 @use "../../styles.scss" as *;
 
-.social-media-div {
-  font-size: clamp(1.1em, 1.3vw, 2.5em);
+.social-media {
+  font-size: clamp(1em, 1.45vw, 1.55em);
   display: flex;
   justify-content: center;
-  padding: 20px 20px 20px;
+  padding: 15px 15px 15px;
   border: 2.5px solid $borderColor;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
  i {
@@ -22,7 +22,13 @@
 }
 
 @media (max-width: 768px) {
-  .social-media-div {
+  .social-media {
     text-align: center;
   }
+}
+
+@media (min-width: 1600px) {
+  .social-media {
+    padding: 25px 25px 25px;
+    }
 }

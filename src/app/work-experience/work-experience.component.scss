@@ -1,6 +1,6 @@
 @use "../../styles.scss" as *;
 
-.experience-main {
+.experience-section {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,33 +14,34 @@
   column-gap: 25px;
 }
 
-.experiences-heading {
-  font-size: clamp(0.65em, 1.1vw, 3em);
+.experience-heading {
+  font-size: clamp(0.7em, 1.2vw, 1.18em);
 }
 
 .timeline-title {
   padding: 50px 0px 20px 0px;
+  font-size: clamp(0.9em, 1.3vw, 1.4em);
 }
 
-.col .timeline-content {
+.experience-column .timeline-content {
   padding: 0px 20px;
-  border-left: 2.5px solid $borderColor;
+  border-left: 3px solid $borderColor;
 }
 
-.col .timeline-content .timeline-box {
+.experience-column .timeline-content .timeline-box {
   position: relative;
   background: $background;
   cursor: pointer;
   transition: all 0.4s;
 }
 
-.col .timeline-content .timeline-box:hover {
-  box-shadow: 0px 0px 12px 0px  $boxShadow;
+.experience-column .timeline-content .timeline-box:hover {
+  box-shadow: 0px 0px 12px 0px $boxShadow;
   border-radius: 20px;
 }
 
-.col .timeline-content .timeline-box::before {
-  content: '';
+.experience-column .timeline-content .timeline-box::before {
+  content: "";
   position: absolute;
   width: 20px;
   height: 20px;
@@ -48,7 +49,7 @@
   right: calc(100% + 9px);
   top: calc(46%);
   background-color: $backgroundSecondaryColor;
-  border: 2.5px solid $borderColor;
+  border: 3px solid $borderColor;
 }
 
 .timeline-box {
@@ -62,47 +63,35 @@
   flex: 1;
   align-content: center;
   white-space: nowrap;
-  border: 2.5px solid $borderColor;
+  border: 3px solid $borderColor;
   border-right: none;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-}
 
-.timeline-title h2 {
-  font-size: clamp(1.2em, 1.2vw, 2.8em);
-}
+  h4 {
+    font-size: clamp(0.75em, 1.1vw, 1em);
 
-.timeline-box h3 {
-  font-size: clamp(0.8em, 1.2vw, 2.8em);
-}
+    a {
+      position: relative;
+      text-decoration: none;
+    }
 
-.timeline-box h4 {
-  font-size: clamp(0.75em, 1.2vw, 2.8em);
+    a::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      width: 0;
+      height: 3px;
+      background-color: $backgroundSecondaryColor;
+      transition: width 0.4s ease, left 0.4s ease;
+    }
 
-  a {
-    position: relative;
-    text-decoration: none;
+    a:hover::after {
+      width: 100%;
+      left: 0;
+    }
   }
-
-  a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    width: 0;
-    height: 2.5px;
-    background-color: $backgroundSecondaryColor;
-    transition: width 0.4s ease, left 0.4s ease;
-  }
-
-  a:hover::after {
-    width: 100%;
-    left: 0;
-  }
-}
-
-.timeline-box h5 {
-  font-size: clamp(0.75em, 1.2vw, 2.8em);
 }
 
 .timeline-box a {
@@ -110,28 +99,30 @@
 }
 
 .timeline-box li {
-  line-height: 1.2;
-  font-size: clamp(0.85em, 1vw, 2.8em);
+  font-size: clamp(0.87em, 1.1vw, 1em);
 }
 
 .timeline-box-list {
   text-align: left;
   list-style: none;
   flex: 2;
-  border: 2.5px solid $borderColor;
+  border: 3px solid $borderColor;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   padding-right: 8px;
-  font-size: clamp(0.85em, 1vw, 2.8em);
+  h5 {
+    font-size: clamp(0.7em, 1vw, 1em);
+    color: $backgroundSecondaryColor;
+  }
 }
 
 .timeline-box-keynotes {
   list-style: square;
   margin: 10px 0;
+  font-size: clamp(0.88em, 1vw, 0.95em);
 }
 
-@media(max-width: 768px) {
-
+@media (max-width: 768px) {
   .timeline-box {
     flex-direction: column;
   }
@@ -141,7 +132,7 @@
     flex: 1;
     align-content: center;
     white-space: nowrap;
-    border: 2.5px solid $borderColor;
+    border: 3px solid $borderColor;
     border-bottom-left-radius: 0px;
     border-bottom: none;
     border-top-right-radius: 20px;
@@ -152,5 +143,4 @@
     border-bottom-left-radius: 20px;
     border-top-right-radius: 0px;
   }
-
 }

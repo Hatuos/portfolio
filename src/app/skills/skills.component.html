@@ -1,67 +1,72 @@
-<div class="skills-main">
-  <div class="skills-main-div">
-    <div class="skills-text-div">
-      <header class="skills-heading">
-        <h1>
-          {{ skillsSectionHeading }}
-        </h1>
-      </header>
-      <div>
-        <h2 class="list-title">Backend Software Skills</h2>
-        <ul class="dev-icons">
-          @for (backendSoftwareSkill of backendSoftwareSkills; track backendSoftwareSkill.skillName) {
-          <li class="skills-inline">
-            <a [href]="backendSoftwareSkill.reference">
-              <img [src]="backendSoftwareSkill.badgeURL" [alt]="backendSoftwareSkill.skillName"/>
-            </a>
-          </li>
-          } @empty {
-          <li>There are no items.</li>
-          }
-        </ul>
-      </div>
-      <div>
-        <h2 class="list-title">Frontend Software Skills</h2>
-        <ul class="dev-icons">
-          @for (frontendSoftwareSkill of frontendSoftwareSkills; track frontendSoftwareSkill.skillName) {
-          <li class="skills-inline">
-            <a [href]="frontendSoftwareSkill.reference">
-              <img [src]="frontendSoftwareSkill.badgeURL" [alt]="frontendSoftwareSkill.skillName"/>
-            </a>
-          </li>
-          } @empty {
-          <li>There are no items.</li>
-          }
-        </ul>
-      </div>
-      <div>
-        <h2 class="list-title">Database Skills</h2>
-        <ul class="dev-icons">
-          @for (databaseSkill of databaseSkills; track databaseSkill.skillName) {
-          <li class="skills-inline">
-            <a [href]="databaseSkill.reference">
-              <img [src]="databaseSkill.badgeURL" [alt]="databaseSkill.skillName"/>
-            </a>
-          </li>
-          } @empty {
-          <li>There are no items.</li>
-          }
-        </ul>
-      </div>
-      <div>
-        <h2 class="list-title">Common Tools Skills</h2>
-        <ul class="dev-icons">
-          @for (toolSoftwareSkill of toolsSoftwareSkills; track toolSoftwareSkill.skillName) {
-          <li class="skills-inline">
-            <a [href]="toolSoftwareSkill.reference">
-              <img [src]="toolSoftwareSkill.badgeURL" [alt]="toolSoftwareSkill.skillName"/>
-            </a>
-          </li>
-          } @empty {
-          <li>There are no items.</li>
-          }
-        </ul>
-      </div>
-    </div>
+<section class="skills-section">
+  <header class="skills-heading">
+    <h1>
+      {{ skillsSectionHeading }}
+    </h1>
+  </header>
+  <div>
+    <h2 class="skills-list-title">Backend Software Skills</h2>
+    <ul class="skills-icons">
+      @for (backendSoftwareSkill of backendSoftwareSkills; track backendSoftwareSkill.skillName) {
+      <li class="skills-inline">
+        <a [href]="backendSoftwareSkill.reference" target="_blank" rel="noreferrer noopener">
+          <img
+            [src]="backendSoftwareSkill.badgeURL"
+            [alt]="backendSoftwareSkill.skillName"
+          />
+        </a>
+      </li>
+      } @empty {
+      <li>There are no items.</li>
+      }
+    </ul>
   </div>
-</div>
+  <div>
+    <h2 class="skills-list-title">Frontend Software Skills</h2>
+    <ul class="skills-icons">
+      @for (frontendSoftwareSkill of frontendSoftwareSkills; track frontendSoftwareSkill.skillName) {
+      <li class="skills-inline">
+        <a [href]="frontendSoftwareSkill.reference" target="_blank" rel="noreferrer noopener">
+          <img
+            [src]="frontendSoftwareSkill.badgeURL"
+            [alt]="frontendSoftwareSkill.skillName"
+          />
+        </a>
+      </li>
+      } @empty {
+      <li>There are no items.</li>
+      }
+    </ul>
+  </div>
+  <div>
+    <h2 class="skills-list-title">Database Skills</h2>
+    <ul class="skills-icons">
+      @for (databaseSkill of databaseSkills; track databaseSkill.skillName) {
+      <li class="skills-inline">
+        <a [href]="databaseSkill.reference" target="_blank" rel="noreferrer noopener">
+          <img [src]="databaseSkill.badgeURL" [alt]="databaseSkill.skillName" />
+        </a>
+      </li>
+      } @empty {
+      <li>There are no items.</li>
+      }
+    </ul>
+  </div>
+  <div>
+    <h2 class="skills-list-title">Common Tools Skills</h2>
+    <ul class="skills-icons">
+      @for (toolSoftwareSkill of toolsSoftwareSkills; track toolSoftwareSkill.skillName) {
+      <li class="skills-inline">
+        <a [href]="toolSoftwareSkill.reference" target="_blank" rel="noreferrer noopener">
+          <img
+            [src]="toolSoftwareSkill.badgeURL"
+            [alt]="toolSoftwareSkill.skillName"
+          />
+        </a>
+      </li>
+      } @empty {
+      <li>There are no items.</li>
+      }
+    </ul>
+  </div>
+</section>

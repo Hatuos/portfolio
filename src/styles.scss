@@ -40,13 +40,6 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
-  html, body {
-    line-height: normal;
-  }
-}
-
 ::-webkit-scrollbar{
   width: 0.6rem;
 }
