@@ -1,7 +1,7 @@
 @use "../../styles.scss" as *;
 
 .social-media {
-  font-size: clamp(1em, 1.45vw, 1.55em);
+  font-size: clamp(1rem, 1.45vw, 1.55rem);
   display: flex;
   justify-content: center;
   padding: 15px 15px 15px;
