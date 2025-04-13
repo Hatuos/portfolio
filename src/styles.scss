@@ -4,8 +4,6 @@
   font-family: "Roboto";
   src: local("Roboto"),
     url("../public/fonts/Roboto-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-size: normal;
   font-display: swap;
 }
 
@@ -13,8 +11,6 @@
   font-family: "Amita";
   src: local("Amita"),
     url("../public/fonts/Amita-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-size: normal;
   font-display: swap;
 }
 
@@ -22,8 +18,6 @@
   font-family: "Megrim";
   src: local("Megrim"),
     url("../public/fonts/Megrim-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-size: normal;
   font-display: swap;
 }
 
@@ -36,6 +30,7 @@ html, body {
   margin: 0;
   background: #1A1A1D;
   font: 20px / 23px Roboto, "Roboto", sans-serif;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
