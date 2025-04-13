@@ -187,7 +187,7 @@ const projectsSection = {
       description: 'Example project 3 serves for things X and Y, along with the implementation of Z.',
       image: "img/exampleProjectImage.png",
       link: 'https://github.com/Hatuos',
-      projectTags: ['Python', 'Pandas','Data Science']
+      projectTags: ['Python', 'Pandas']
     }
   ]
 

@@ -1,11 +1,10 @@
 @use "../../styles.scss" as *;
 
 .experience-section {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  width: 100%;
-  padding: 35px 6%;
+  margin: 0 auto;
+  width: 91%;
+  padding: 20px 10px;
 }
 
 .row {
@@ -67,6 +66,7 @@
   border-right: none;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  padding: 10px 10px;
 
   h4 {
     font-size: clamp(0.8rem, 1.1vw, 1rem);
@@ -119,7 +119,7 @@
 .timeline-box-keynotes {
   list-style: square;
   margin: 10px 0;
-  font-size: clamp(0.88em, 1vw, 0.95em);
+  font-size: clamp(0.88rem, 1vw, 0.95rem);
 }
 
 @media (max-width: 768px) {
