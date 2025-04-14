@@ -9,7 +9,7 @@
 }
 
 .projects-header {
-  font-size: clamp(0.70rem, 1.2vw, 1.18rem);
+  font-size: clamp(14px, 1.2vw, 24px);
   margin-bottom: 2rem;
 }
 
@@ -31,7 +31,7 @@
 
   &:hover {
     transform: scale(1.02);
-    box-shadow: 0px 0px 12px 0px $boxShadow;
+    box-shadow: 0px 0px 6px 0px $boxShadow;
 
     .project-image img {
       transform: scale(1.1) rotate(2deg);
@@ -94,14 +94,14 @@
 }
 
 .project-title {
-  font-size: clamp(0.9rem, 1.3vw, 1.4rem);
+  font-size: clamp(12px, 1.3vw, 28px);
   color: $textColor;
   margin-bottom: 0.8rem;
 }
 
 .project-description {
   line-height: 1.2;
-  font-size: clamp(0.75rem, 1vw, 1.05rem);
+  font-size: clamp(15px, 1vw, 21px);
   color: $textColor;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
@@ -143,7 +143,7 @@
   margin: 0 auto;
   display: block;
   margin-bottom: 25px;
-  font-size: clamp(0.8rem, 1vw, 1rem);
+  font-size: clamp(16px, 1vw, 20px);
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -165,6 +165,9 @@
 }
 
 @media (max-width: 768px) {
+  .projects-header {
+    margin-top: -20px;
+  }
   .project-overlay  {
     opacity: 1;
   }
