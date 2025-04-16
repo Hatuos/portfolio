@@ -25,12 +25,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-html, body {
+html {
+  font: 20px / 23px Roboto, "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  font: inherit;
   scroll-behavior: smooth;
   margin: 0;
   background: #1A1A1D;
-  font: 20px / 23px Roboto, "Roboto", sans-serif;
-  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
