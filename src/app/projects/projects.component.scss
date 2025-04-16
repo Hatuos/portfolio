@@ -9,7 +9,7 @@
 }
 
 .projects-header {
-  font-size: clamp(14px, 1.2vw, 24px);
+  font-size: clamp(0.70rem, 1.2vw, 1.18rem);
   margin-bottom: 2rem;
 }
 
@@ -94,14 +94,14 @@
 }
 
 .project-title {
-  font-size: clamp(12px, 1.3vw, 28px);
+  font-size: clamp(0.9rem, 1.3vw, 1.4rem);
   color: $textColor;
   margin-bottom: 0.8rem;
 }
 
 .project-description {
   line-height: 1.2;
-  font-size: clamp(15px, 1vw, 21px);
+  font-size: clamp(0.75rem, 1vw, 1.05rem);
   color: $textColor;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
@@ -143,7 +143,7 @@
   margin: 0 auto;
   display: block;
   margin-bottom: 25px;
-  font-size: clamp(16px, 1vw, 20px);
+  font-size: clamp(0.8rem, 1vw, 1rem);
   cursor: pointer;
   transition: all 0.3s ease;
 }

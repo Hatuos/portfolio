@@ -69,7 +69,7 @@
   padding: 10px 10px;
 
   h4 {
-    font-size: clamp(16px, 1.1vw, 20px);
+    font-size: clamp(0.8rem, 1.1vw, 1rem);
 
     a {
       position: relative;
@@ -99,7 +99,7 @@
 }
 
 .timeline-box li {
-  font-size: clamp(15px, 1.1vw, 20px);
+  font-size: clamp(0.75rem, 1.1vw, 1rem);
 }
 
 .timeline-box-list {
@@ -109,9 +109,9 @@
   border: 3px solid $borderColor;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  padding-right: 8px;
+  padding-right: 15px;
   h5 {
-    font-size: clamp(14px, 1vw, 20px);
+    font-size: clamp(0.7rem, 1vw, 1rem);
     color: $backgroundSecondaryColor;
   }
 }
@@ -119,7 +119,9 @@
 .timeline-box-keynotes {
   list-style: square;
   margin: 10px 0;
-  font-size: clamp(18px, 1vw, 19px);
+  margin-left: 0;
+  padding-left: 1.3rem;
+  font-size: clamp(0.88rem, 1vw, 0.95rem);
 }
 
 @media (max-width: 768px) {
