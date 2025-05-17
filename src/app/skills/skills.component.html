@@ -1,0 +1,75 @@
+<section class="skills-section">
+  <header class="skills-heading">
+    <h2>
+      {{ skillsSectionHeading }}
+    </h2>
+  </header>
+  <div>
+    <h2 class="skills-list-title">Backend Software Skills</h2>
+    <ul class="skills-icons">
+      @for (backendSoftwareSkill of backendSoftwareSkills; track backendSoftwareSkill.skillName) {
+      <li class="skills-inline">
+        <a [href]="backendSoftwareSkill.reference" target="_blank" rel="noreferrer noopener">
+          <img
+            [src]="backendSoftwareSkill.badgeURL"
+            [alt]="backendSoftwareSkill.skillName"
+            loading="lazy"
+          />
+        </a>
+      </li>
+      } @empty {
+      <li>There are no items.</li>
+      }
+    </ul>
+  </div>
+  <div>
+    <h2 class="skills-list-title">Frontend Software Skills</h2>
+    <ul class="skills-icons">
+      @for (frontendSoftwareSkill of frontendSoftwareSkills; track frontendSoftwareSkill.skillName) {
+      <li class="skills-inline">
+        <a [href]="frontendSoftwareSkill.reference" target="_blank" rel="noreferrer noopener">
+          <img
+            [src]="frontendSoftwareSkill.badgeURL"
+            [alt]="frontendSoftwareSkill.skillName"
+            loading="lazy"
+          />
+        </a>
+      </li>
+      } @empty {
+      <li>There are no items.</li>
+      }
+    </ul>
+  </div>
+  <div>
+    <h2 class="skills-list-title">Database Skills</h2>
+    <ul class="skills-icons">
+      @for (databaseSkill of databaseSkills; track databaseSkill.skillName) {
+      <li class="skills-inline">
+        <a [href]="databaseSkill.reference" target="_blank" rel="noreferrer noopener">
+          <img [src]="databaseSkill.badgeURL" [alt]="databaseSkill.skillName" />
+        </a>
+      </li>
+      } @empty {
+      <li>There are no items.</li>
+      }
+    </ul>
+  </div>
+  <div>
+    <h2 class="skills-list-title">Common Tools Skills</h2>
+    <ul class="skills-icons">
+      @for (toolSoftwareSkill of toolsSoftwareSkills; track toolSoftwareSkill.skillName) {
+      <li class="skills-inline">
+        <a [href]="toolSoftwareSkill.reference" target="_blank" rel="noreferrer noopener">
+          <img
+            [src]="toolSoftwareSkill.badgeURL"
+            [alt]="toolSoftwareSkill.skillName"
+            loading="lazy"
+          />
+        </a>
+      </li>
+      } @empty {
+      <li>There are no items.</li>
+      }
+    </ul>
+  </div>
+</section>

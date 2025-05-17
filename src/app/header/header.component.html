@@ -1,0 +1,33 @@
+<header class="header">
+  <a href="/" class="header-logo">
+    <span>&lt;</span>
+    <span class="header-logo-name">{{ greeting.username }}</span>
+    <span>/&gt;</span>
+  </a>
+  <input class="header-menu-btn" type="checkbox" id="header-menu-btn" />
+  <label class="header-menu-icon" for="header-menu-btn">
+    <span class="navicon"></span>
+  </label>
+  <ul class="header-menu">
+    @if (information.introduction.display) {
+    <li>
+      <a (click)="scrollToSection($event, 'about-me')">About me</a>
+    </li>
+    } 
+    @if (information.skillsSection.display) {
+    <li>
+      <a (click)="scrollToSection($event, 'skills')">Skills</a>
+    </li>
+    }
+    @if (information.projectsSection.display) {
+    <li>
+      <a (click)="scrollToSection($event, 'projects')">Projects</a>
+    </li>
+    }
+    @if (information.myJourney.display) {
+    <li>
+      <a (click)="scrollToSection($event, 'my-journey')">My Journey</a>
+    </li>
+    }
+  </ul>
+</header>

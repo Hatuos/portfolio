@@ -1,0 +1,21 @@
+<section class="greeting-main">
+  <div class="greeting-text">
+    <header>
+      <h1 class="greeting-header css-typing">
+        {{ greeting.title }}.I'm <span>{{ greeting.username }}</span>.
+      </h1>
+    </header>
+    <a href="https://github.com/DenverCoder1/readme-typing-svg" target="_blank" rel="noreferrer noopener"> 
+      <img
+        class="typing-image"
+        src="https://readme-typing-svg.herokuapp.com?lines=Computer+Science+Engineer;Competitive+Programmer;Always+learning+new+things;Agile+development+lover;Testers-fearing+man&center=true&width=450&height=40&color=fbc901">
+    </a>
+    <p class="subtitle">
+      {{ greeting.subTitle }}
+    </p>
+    <app-social-media></app-social-media>
+  </div>
+  <div class="greeting-image">
+    <img alt="avatar" [src]="greeting.welcomeAvatar" />
+  </div>
+</section>

@@ -1,0 +1,199 @@
+@use "../../styles.scss" as *;
+
+$transition-duration: 0.25s;
+$header-mobile-breakpoint: 772px;
+
+@mixin smooth-transition($properties...) {
+  transition: $properties $transition-duration ease-in-out;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  z-index: 1000;
+  background-color: $background;
+  border-bottom: 2.5px solid $borderColor;
+  height: clamp(2.7em, 5vw, 5em);
+  @include smooth-transition(transform);
+
+  &.hidden {
+    transform: translateY(-100%);
+  }
+
+  &.visible {
+    transform: translateY(0);
+  }
+
+  .header-logo {
+    font-size: clamp(1.4rem, 1.8vw, 2rem);
+    font-family: "Amita";
+    margin: 20px 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: $textColor;
+    transition: all 0.3s ease;
+    @media (max-width: $header-mobile-breakpoint) {
+      display: none;
+    }
+
+    .header-logo-name {
+      font-family: "Megrim";
+      transition: all 0.3s ease;
+    }
+  }
+
+  .header-logo:hover {
+    transform: scale(1.1);
+    .header-logo-name {
+      color: $backgroundSecondaryColor;
+    }
+  }
+
+  .header-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &.open {
+      right: 0;
+    }
+
+    li {
+      text-align: center;
+      padding-right: 10px;
+
+      a {
+        display: block;
+        padding: clamp(0.88em, 1.2vw, 2.2em) 25px;
+        text-decoration: none;
+        color: $textColor;
+        border-radius: 10px;
+        font-size: clamp(0.95rem, 1.3vw, 1.5rem);
+
+        &:hover,
+        &:focus {
+          background-color: $backgroundSecondaryColor;
+          color: $background;
+          @include smooth-transition(all);
+        }
+      }
+    }
+
+    @media (max-width: $header-mobile-breakpoint) {
+      position: fixed;
+      top: 2.8em;
+      right: -210px;
+      height: 100vh;
+      width: 210px;
+      background-color: $background;
+      border-left: 2.5px solid $borderColor;
+      flex-direction: column;
+      padding-top: 40px;
+      overflow-y: auto;
+      @include smooth-transition(right);
+
+      li {
+        a {
+          font-size: clamp(0.85rem, 1.3vw, 3rem);
+        }
+      }
+    }
+  }
+
+  .header-menu-icon {
+    display: none;
+
+    @media (max-width: $header-mobile-breakpoint) {
+      display: block;
+      position: absolute;
+      top: 1.35rem;
+      right: 3em;
+      cursor: pointer;
+      transform: scale(0.95);
+
+      .navicon {
+        background: $textColor;
+        position: absolute;
+        @include smooth-transition(all);
+
+        &:before,
+        &:after {
+          content: "";
+          display: block;
+          height: 2.5px;
+          background: $textColor;
+          position: absolute;
+          width: 28px;
+          @include smooth-transition(all);
+        }
+
+        &:before {
+          top: -6px;
+        }
+
+        &:after {
+          top: 6px;
+        }
+      }
+
+      &.open .navicon {
+        background: transparent;
+
+        &:before {
+          transform: rotate(-45deg);
+          top: 0;
+        }
+
+        &:after {
+          transform: rotate(45deg);
+          top: 0;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $header-mobile-breakpoint) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header-menu {
+      flex-direction: row;
+      position: static;
+      height: auto;
+      width: auto;
+    }
+
+    .header-menu-icon {
+      display: none;
+    }
+  }
+
+  .header-menu-btn {
+    display: none;
+
+    &:checked ~ .header-menu {
+      right: 0;
+    }
+
+    &:checked ~ .header-menu-icon .navicon {
+      background: transparent;
+
+      &:before {
+        transform: rotate(-45deg);
+        top: 0;
+      }
+
+      &:after {
+        transform: rotate(45deg);
+        top: 0;
+      }
+    }
+  }
+}

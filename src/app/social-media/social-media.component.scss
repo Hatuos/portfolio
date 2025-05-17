@@ -1,0 +1,34 @@
+@use "../../styles.scss" as *;
+
+.social-media {
+  font-size: clamp(1rem, 1.45vw, 1.55rem);
+  display: flex;
+  justify-content: center;
+  padding: 15px 15px 15px;
+  border: 2.5px solid $borderColor;
+  border-radius: 25px;
+}
+
+ i {
+  color: $textColor;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.github i:hover, .linkedin i:hover {
+  color: $socialMediaHoverBG;
+  transition: 0.2s ease-in;
+}
+
+@media (max-width: 768px) {
+  .social-media {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1600px) {
+  .social-media {
+    padding: 25px 25px 25px;
+    }
+}

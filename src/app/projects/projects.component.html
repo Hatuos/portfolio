@@ -1,0 +1,32 @@
+<section class="projects-section">
+  <header class="projects-header">
+    <h2>
+      {{ projectsSectionHeading }}
+    </h2>
+  </header>
+  <div class="projects-grid">
+    @for (project of projectsSection.projects; track project.title) {
+    <div class="project-card">
+      <div class="project-image">
+        <img [src]="project.image" loading="lazy"/>
+        <div class="project-overlay">
+          <a [href]="project.link" target="_blank" rel="noreferrer noopener" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.description }}</p>
+        <div class="project-tags">
+          @for (tag of project.projectTags; track tag) {
+          <span class="tag">{{ tag }}</span>
+          }
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+    <a class="projects-button"
+    [href]="projectsSection.githubProjectsLink" target="_blank" rel="noreferrer noopener">
+      GitHub Projects
+    </a>
+</section>

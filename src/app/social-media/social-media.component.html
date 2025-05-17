@@ -1,0 +1,24 @@
+@if (socialMediaLinks.display) {
+<section class="social-media">
+  <div class="contact-me">Contact me:</div>
+  @if (socialMediaLinks.linkedin.trim() != '') {
+  <a
+    [href]="socialMediaLinks.linkedin"
+    class="icon-button linkedin"
+    target="_blank" 
+    rel="noreferrer noopener"
+  >
+    <i class="fa-brands fa-linkedin fa-xl"></i>
+  </a>
+  } @if (socialMediaLinks.github.trim() != '') {
+  <a
+    [href]="socialMediaLinks.github"
+    class="icon-button github"
+    target="_blank" 
+    rel="noreferrer noopener"
+  >
+    <i class="fa-brands fa-github fa-xl"></i>
+  </a>
+  }
+</section>
+}

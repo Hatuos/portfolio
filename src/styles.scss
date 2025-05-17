@@ -1,0 +1,55 @@
+@forward "./sass/globals/global.scss";
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url("../public/fonts/Roboto-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amita";
+  src: local("Amita"),
+    url("../public/fonts/Amita-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Megrim";
+  src: local("Megrim"),
+    url("../public/fonts/Megrim-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+html {
+  font: 20px / 23px Roboto, "Roboto", sans-serif;
+  font-size: 20px;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  font: inherit;
+  scroll-behavior: smooth;
+  margin: 0;
+  background: #1A1A1D;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar{
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fbc901;
+  border-radius: 100vw;
+}
