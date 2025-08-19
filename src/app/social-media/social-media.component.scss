@@ -7,16 +7,34 @@
   padding: 15px 15px 15px;
   border: 2.5px solid $borderColor;
   border-radius: 25px;
+
+  p {
+    margin: 0;
+  }
 }
 
- i {
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
   color: $textColor;
   cursor: pointer;
-  display: inline-block;
-  margin: 0 8px;
+  margin: 0 4px;
 }
 
-.github i:hover, .linkedin i:hover {
+.icon-button fa-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-button.linkedin:hover fa-icon {
+  color: $socialMediaHoverBG;
+  transition: 0.2s ease-in;
+}
+
+.icon-button.github:hover fa-icon {
   color: $socialMediaHoverBG;
   transition: 0.2s ease-in;
 }
@@ -25,10 +43,4 @@
   .social-media {
     text-align: center;
   }
-}
-
-@media (min-width: 1600px) {
-  .social-media {
-    padding: 25px 25px 25px;
-    }
 }

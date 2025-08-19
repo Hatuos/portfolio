@@ -70,7 +70,7 @@ $header-mobile-breakpoint: 772px;
 
       a {
         display: block;
-        padding: clamp(0.88em, 1.2vw, 2.2em) 25px;
+        padding: clamp(0.65em, 1.2vw, 2.2em) 25px;
         text-decoration: none;
         color: $textColor;
         border-radius: 10px;
@@ -87,7 +87,7 @@ $header-mobile-breakpoint: 772px;
 
     @media (max-width: $header-mobile-breakpoint) {
       position: fixed;
-      top: 2.8em;
+      top: 2.81em;
       right: -210px;
       height: 100vh;
       width: 210px;
