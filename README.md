@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-I`m developing this portfolio as a personal Angular proyect. **At the moment it is under development**, taking it as an opportunity to test things with Angular 19 as the framework is bringing many new features.
+I`m developing this portfolio as a personal Angular proyect. **At the moment it is under development**, taking it as an opportunity to test things with Angular 20 as the framework is bringing many new features.
 
 
 ---
@@ -23,23 +23,37 @@ As you all know, **plagiarism is bad**. It's always disheartening to find out th
 
 ---
 
-### Prerequisites
+### Running with Docker
 
-You need to have NPM and Angular CLI installed in your PC. NPM is aviable with NodeJS in [here](https://nodejs.org/en). After you install NPM, install Angular CLI by typping the following command in your terminal
+Build a Docker image from the project directory
+
+``` bash
+docker build -t portfolio-image .
+```
+
+Create and start a container from the image you just built.
+
+``` bash
+docker run -d -p 8080:80 --name portfolio portfolio-image
+```
+
+Go to [http://localhost:8080](http://localhost:8080).
+
+---
+
+### Running locally
+
+You need to have NPM and, optionally, Angular CLI installed on your PC. NPM is available with NodeJS in [here](https://nodejs.org/en). After you install NPM, install Angular CLI by typping the following command in your terminal
 
 ``` bash
 npm install -g @angular/cli
 ```
 
-### Installing
-
-Just clone  the repo and excecute the following command inside the folder proyect
+Execute the following command inside the folder proyect
 
 ``` bash
 npm install
 ```
-
-### Executing
 
 Now just run
 ```

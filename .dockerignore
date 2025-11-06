@@ -1,0 +1,24 @@
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Local builds
+dist
+tmp
+out-tsc
+
+# System files
+.DS_Store
+*.log
+*.swp
+.git
+.gitignore
+.idea
+.vscode
+.env
+
+# Local configuration
+.env
+.env.*
+docker-compose.yml

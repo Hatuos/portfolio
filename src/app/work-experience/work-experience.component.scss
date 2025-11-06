@@ -14,12 +14,12 @@
 }
 
 .experience-heading {
-  font-size: clamp(0.7rem, 1.2vw, 1.18rem);
+  font-size: clamp(0.7rem, 1.1vw, 1.15rem);
 }
 
 .timeline-title {
   padding: 25px 0px 20px 0px;
-  font-size: clamp(0.9rem, 1.3vw, 1.4rem);
+  font-size: clamp(0.9rem, 1.2vw, 1.25rem);
 }
 
 .experience-column .timeline-content {
@@ -69,7 +69,7 @@
   padding: 10px 10px;
 
   h4 {
-    font-size: clamp(0.8rem, 1.1vw, 1rem);
+    font-size: clamp(0.8rem, 1vw, 1rem);
 
     a {
       position: relative;
@@ -99,7 +99,7 @@
 }
 
 .timeline-box li {
-  font-size: clamp(0.75rem, 1.1vw, 1rem);
+  font-size: clamp(0.75rem, 0.95vw, 0.95rem);
 }
 
 .timeline-box-list {
@@ -111,7 +111,7 @@
   border-bottom-right-radius: 20px;
   padding-right: 15px;
   h5 {
-    font-size: clamp(0.7rem, 1vw, 1rem);
+    font-size: clamp(0.7rem, 0.9vw, 1rem);
     color: $backgroundSecondaryColor;
   }
 }

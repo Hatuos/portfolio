@@ -17,7 +17,7 @@
 }
 
 .greeting-header {
-  font-size: clamp(1.15rem, 3vw, 3rem);
+  font-size: clamp(1.15rem, 2.7vw, 2.5rem);
   line-height: 1.1;
   color: $textColor !important;
   margin: auto;
@@ -29,7 +29,7 @@
 }
 
 .typing-image {
-  height:  clamp(1.6em, 2.5vw, 3em);
+  height:  clamp(1.6em, 2.3vw, 2.6em);
   margin-top: 1rem;
   margin-bottom: 0.7rem;
 }
@@ -82,7 +82,7 @@
 
 .subtitle {
   margin-top: -0.5rem;
-  font-size: clamp(0.85rem, 1.3vw, 1.35rem);
+  font-size: clamp(0.85rem, 1.2vw, 1.35rem);
   line-height: 120%;
   color: $subTitle !important;
 }
