@@ -8,13 +8,13 @@ const introduction = {
     resumeLink:
       '-----',
     display: true
-};
+} as { username: string, title: string, welcomeAvatar: string, subTitle: string, resumeLink: string, display: boolean };
 
 const socialMediaLinks = {
   github: 'https://github.com/Hatuos',
   linkedin: 'https://es.linkedin.com/',
   display: true
-};
+} as { github: string, linkedin: string, display: boolean };
 
 const skillsSection = {
   title: 'Skills',
@@ -22,7 +22,7 @@ const skillsSection = {
   backendSoftwareSkills: [
     {
       skillName: 'Java',
-      badgeURL : 'https://img.shields.io/badge/Jakarta_EE-%23ED8B00.svg?style=for-the-badge&logo=Java&logoColor=white',
+      badgeURL : 'https://img.shields.io/badge/Jakarta_EE-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white',
       reference: 'https://www.oracle.com/java/'
     },
     {
@@ -36,32 +36,17 @@ const skillsSection = {
       reference: 'https://spring.io/projects/spring-boot'
     },
     {
+      skillName: 'Hibernate',
+      badgeURL : 'https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=fff',
+      reference: 'https://spring.io/'
+    },
+    {
       skillName: 'Python',
       badgeURL : 'https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue',
       reference: 'https://www.python.org/'
-    },
-    {
-      skillName: 'C',
-      badgeURL : 'https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white',
-      reference: 'https://en.wikipedia.org/wiki/C_(programming_language)'
-    },
-    {
-      skillName: 'C++',
-      badgeURL : 'https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white',
-      reference: 'https://en.wikipedia.org/wiki/C%2B%2B'
     }
   ],
   frontendSoftwareSkills: [
-    {
-      skillName: 'html',
-      badgeURL : 'https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white',
-      reference: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
-    },
-    {
-      skillName: 'css',
-      badgeURL : 'https://img.shields.io/badge/CSS-323330?style=for-the-badge&logo=css3&logoColor=white',
-      reference: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
-    },
     {
       skillName: 'TypeScript',
       badgeURL : 'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
@@ -73,6 +58,11 @@ const skillsSection = {
       reference: 'https://nodejs.org/'
     },
     {
+      skillName: 'PNPM',
+      badgeURL : 'https://img.shields.io/badge/pnpm-F69220?style=for-the-badge&logo=pnpm&logoColor=fff',
+      reference: 'https://pnpm.io/'
+    },
+    {
       skillName: 'Angular',
       badgeURL : 'https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white',
       reference: 'https://angular.dev/'
@@ -80,49 +70,50 @@ const skillsSection = {
   ],
   databaseSkills: [
     {
-      skillName: 'DBeaver',
-      badgeURL : 'https://img.shields.io/badge/dbeaver-382923?style=for-the-badge&logo=dbeaver&logoColor=white',
-      reference: 'https://dbeaver.io/'
+      skillName: 'Oracle',
+      badgeURL : 'https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white',
+      reference: 'https://www.oracle.com/'
     },
+    
     {
       skillName: 'MySQL',
       badgeURL : 'https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white',
       reference: 'https://www.mysql.com/'
-    },
-    {
-      skillName: 'Oracle',
-      badgeURL : 'https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white',
-      reference: 'https://www.oracle.com/'
     }
   ],
   toolsSoftwareSkills: [
     {
-      skillName: 'Git',
-      badgeURL : 'https://img.shields.io/badge/Git-330F63?style=for-the-badge&logo=gitlab&logoColor=white',
-      reference: 'https://github.com/'
+      skillName: 'Docker',
+      badgeURL : 'https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=fff',
+      reference: 'https://www.docker.com/'
     },
     {
-      skillName: 'IntelliJ IDEA',
-      badgeURL : 'https://img.shields.io/badge/IntelliJ-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white',
-      reference: 'https://www.jetbrains.com/idea/'
+
+      skillName: 'Jenkins',
+      badgeURL : 'https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white',
+      reference: 'https://www.jenkins.io/'
     },
     {
-      skillName: 'Visual Studio Code',
-      badgeURL : 'https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white',
-      reference: 'https://code.visualstudio.com/'
+
+      skillName: 'Postman',
+      badgeURL : 'https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white',
+      reference: 'https://www.postman.com/'
     },
     {
       skillName: 'SonarQube',
-      badgeURL : 'https://img.shields.io/badge/Sonar-5190cf?style=for-the-badge&logo=sonarqube&logoColor=white',
+      badgeURL : 'https://img.shields.io/badge/SonarQube-126ED3?style=for-the-badge&logo=sonarqubecloud&logoColor=fff',
       reference: 'https://www.sonarsource.com/'
-    },
-    {
-      skillName: 'CicleCI',
-      badgeURL : 'https://img.shields.io/badge/circle%20ci-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white',
-      reference: 'https://circleci.com/'
     }
   ],
   display: true
+} as {
+  title: string, 
+  softwareSkillsHeader: string, 
+  backendSoftwareSkills: { skillName: string, badgeURL: string, reference: string }[],
+  frontendSoftwareSkills:  { skillName: string, badgeURL: string, reference: string }[],
+  databaseSkills: { skillName: string, badgeURL: string, reference: string }[],
+  toolsSoftwareSkills: { skillName: string, badgeURL: string, reference: string }[],
+  display: boolean
 };
 
 const myJourney = {
@@ -161,6 +152,13 @@ const myJourney = {
       ]
     }
   ]
+} as {
+  display: boolean, 
+  myJourneyHeader: string, 
+  academicJourneyHeader: string,
+  workJourneyHeader: string,
+  academicExperience: { role: string, centerName: string, centerLink: string, date: number, desc: string, certificationDescription: string[], keyNotes: string[] }[];
+  workExperience: { role: string, companyName: string, companyLink: string, date: string, workDescription: string[], keyNotes: string[] }[]
 };
 
 const projectsSection = {
@@ -190,7 +188,11 @@ const projectsSection = {
       projectTags: ['Python', 'Pandas']
     }
   ]
-
+} as {
+  display: boolean,
+  title: string,
+  githubProjectsLink: string,
+  projects: { title: string, description: string, image: string, link: string, projectTags: string[] }[]
 }
   
 export { introduction, socialMediaLinks, skillsSection, myJourney, projectsSection};

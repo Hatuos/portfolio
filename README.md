@@ -57,20 +57,20 @@ Go to [http://localhost:8080](http://localhost:8080).
 
 ### Running locally 🔧
 
-You need to have NPM and, optionally, Angular CLI installed on your PC. NPM is available with NodeJS in [here](https://nodejs.org/en). After you install NPM, install Angular CLI by typping the following command in your terminal
+You need to have Node (NPM or PNPM) and, optionally, Angular CLI installed on your PC. 
+
+- Node is available in [here](https://nodejs.org/en). 
+
+- PNPM is available in [here](https://pnpm.io/). 
+
+Execute the following command inside the project folder:
 
 ``` bash
-npm install -g @angular/cli
-```
-
-Execute the following command inside the folder proyect
-
-``` bash
-npm install
+npm/pnpm install
 ```
 
 Now just run
 ```
-npm start
+npm/pnpm start
 ```
-Wait to compilation and go to [http://localhost:4200](http://localhost:4200) after compilation finished.
+Go to [http://localhost:4200](http://localhost:4200) when the application is running.
