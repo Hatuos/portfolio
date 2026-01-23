@@ -7,8 +7,9 @@ const introduction = {
     Ask me about whatever you want related to computer engineering, I may not know the answer but I'm sure I'll learn something.`,
     resumeLink:
       '-----',
+    typedText: ['Computer Science Engineer', 'Competitive Programmer', 'Always learning new things', 'Agile development lover', 'Testers-fearing man'],
     display: true
-} as { username: string, title: string, welcomeAvatar: string, subTitle: string, resumeLink: string, display: boolean };
+} as { username: string, title: string, welcomeAvatar: string, subTitle: string, resumeLink: string, typedText: string[], display: boolean };
 
 const socialMediaLinks = {
   github: 'https://github.com/Hatuos',

@@ -22,61 +22,14 @@
   color: $textColor !important;
   margin: auto;
   align-content: center;
-
-  span {
-    color: $backgroundSecondaryColor;
-  }
-}
-
-.typing-image {
-  height:  clamp(1.6em, 2.3vw, 2.6em);
-  margin-top: 1rem;
-  margin-bottom: 0.7rem;
-}
-
-.css-typing {
   width: 23ch;
   overflow: hidden;
   margin-bottom: 0;
   font-family: 'JetBrains Mono', monospace;
-  border-right: .15em solid $borderColor;
   white-space: nowrap;
-  -webkit-animation: type 2.5s steps(24, end), blink .5s step-end infinite alternate;
-  animation: type 2.5s steps(24, end), blink .5s step-end infinite alternate;
-  -webkit-animation-delay: 2s;
-  animation-delay: 0s;
-}
 
-@keyframes type {
-  from {
-    width: 0;
-    opacity: 1;
-  }
-  to {
-    width: 24ch;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes type {
-  from {
-    width: 0;
-    opacity: 1;
-  }
-  to {
-    width: 100%;
-    opacity: 1;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-@-webkit-keyframes blink {
-  50% {
-    border-color: transparent;
+  span {
+    color: $backgroundSecondaryColor;
   }
 }
 
