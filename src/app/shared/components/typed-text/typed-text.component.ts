@@ -1,5 +1,5 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { introduction } from '../../../data';
+import { Component, OnDestroy, OnInit, signal, WritableSignal } from '@angular/core';
+import { introduction } from '../../../../../data';
 
 @Component({
   selector: 'app-typed-text',
@@ -17,7 +17,7 @@ export class TypedTextComponent implements OnInit, OnDestroy {
   private currentTextIndex: number = 0;
   private currentCharIndex: number = 0;
   private typingInterval: any = null;
-  protected displayText: string = '';
+  protected displayText: WritableSignal<string> = signal('');
 
   ngOnInit(): void {
     setTimeout(() => this.startTyping(), 3000);
@@ -34,8 +34,8 @@ export class TypedTextComponent implements OnInit, OnDestroy {
   }
 
   private typeText(): void {
-    const currentString = this.typedText[this.currentTextIndex];
-    this.displayText = currentString.slice(0, this.currentCharIndex + 1);
+    const currentString: string = this.typedText[this.currentTextIndex];
+    this.displayText.set(currentString.slice(0, this.currentCharIndex + 1));
 
     if (this.currentCharIndex < currentString.length - 1) {
       this.currentCharIndex++;
@@ -46,11 +46,11 @@ export class TypedTextComponent implements OnInit, OnDestroy {
   }
 
   private deleteText(): void {
-    const currentString = this.typedText[this.currentTextIndex];
+    const currentString: string = this.typedText[this.currentTextIndex];
 
     if (this.currentCharIndex > 0) {
       this.currentCharIndex--;
-      this.displayText = currentString.slice(0, this.currentCharIndex);
+      this.displayText.set(currentString.slice(0, this.currentCharIndex));
       this.typingInterval = setTimeout(() => this.deleteText(), this.backSpeed);
     } else {
       this.currentTextIndex = (this.currentTextIndex + 1) % this.typedText.length;

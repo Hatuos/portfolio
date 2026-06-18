@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { introduction } from '../../../data';
 import { SocialMediaComponent } from '../social-media/social-media.component';
-import { TypedTextComponent } from '../shared/typed-text.component';
+import { TypedTextComponent } from '../shared/components/typed-text/typed-text.component';
 
 @Component({
   selector: 'app-introduction',

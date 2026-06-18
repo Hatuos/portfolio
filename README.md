@@ -1,7 +1,7 @@
 <h1 align="center">Portfolio</h1>
 <p align="center">
   <i>
-I`m developing this portfolio as a personal Angular proyect. <b>At the moment it is under development</b>, taking it as an opportunity to test things with Angular 20 as the framework is bringing many new features.</i>
+I`m developing this portfolio as a personal Angular proyect. <b>At the moment it is under development</b>, taking it as an opportunity to test things with Angular as the framework is bringing many new features.</i>
 </p>
 
 ---

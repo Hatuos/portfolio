@@ -1,6 +1,6 @@
 @use "../styles.scss" as *;
 
-.App {
+.app-content {
   text-align: center;
   width: 100%;
   max-width: 1920px;
@@ -8,9 +8,22 @@
   overflow-x: hidden;
   background-color: $background;
   color: $textColor;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.app-content.ready {
+  opacity: 1;
 }
 
 .loadingPage {
+  animation: fadeOut 1s ease 1.5s forwards;
+
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 9999;
+
   body {
     background-color: #1c1c20;
     overflow: hidden;
@@ -270,6 +283,16 @@
     100% {
       left: -100%;
       opacity: 0;
+    }
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+      visibility: hidden;
     }
   }
 }

@@ -1,6 +1,5 @@
 import { Component} from '@angular/core';
 import { introduction, myJourney, projectsSection, skillsSection, socialMediaLinks } from '../../../data';
-import { trigger, style, query, transition, stagger, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-header',

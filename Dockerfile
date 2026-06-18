@@ -1,15 +1,17 @@
 # Stage 1: Build Angular application
 FROM node:22.15.1-alpine3.20 AS build
+# Enable pnpm via Corepack (included with Node.js)
+RUN corepack enable
 # Set working directory
 WORKDIR /app
-# Copy only package files to install dependencies
-COPY package*.json ./
+# Copy dependency manifests
+COPY package.json pnpm-lock.yaml ./
 # Install dependencies
-RUN npm ci
+RUN pnpm install --frozen-lockfile
 # Copy the rest of the source code
 COPY . .
 # Build the Angular app for production
-RUN npm run build -- --configuration production
+RUN pnpm run build --configuration production
 
 # Stage 2: Apache server to host the app
 FROM httpd:2.4.64-alpine3.22

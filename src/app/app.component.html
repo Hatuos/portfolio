@@ -1,33 +1,33 @@
-@if (loadingPageState == "visible") {
-  <div class="loadingPage" [@fadeInOut]="loadingPageState">
-    <div class='body'>
-      <span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
-      <div class='base'>
-        <span></span>
-        <div class='face'></div>
-      </div>
+@if (showInitAnimation()) {
+  <div class="loadingPage" (animationend)="onLoadingPageEnd()">
+  <div class="body">
+    <span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="base">
+      <span></span>
+      <div class="face"></div>
     </div>
-    <div class='longfazers'>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <h1>Tumbling down the rabbit hole</h1>
-  </div> 
+  </div>
+  <div class="longfazers">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <h1>Tumbling down the rabbit hole</h1>
+</div>
 }
 
-<div class="App" [@fadeInOut]="appPageState" [hidden]="appPageState == 'hidden'">
+<div class="app-content" [class.ready]="showAppContent()">
   <app-header></app-header>
   <main>
     @if (information.introduction.display) {
       <app-introduction id="about-me" class="App"></app-introduction>
-    } 
+    }
     @if (information.skillsSection.display) {
       <app-skills id="skills"></app-skills>
     }
