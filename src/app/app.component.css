@@ -1,4 +1,4 @@
-@use "../styles.scss" as *;
+@import "@styles";
 
 .app-content {
   text-align: center;
@@ -6,14 +6,137 @@
   max-width: 1920px;
   margin: 0 auto;
   overflow-x: hidden;
-  background-color: $background;
-  color: $textColor;
+  background-color: var(--background);
+  color: var(--textColor);
   opacity: 0;
   transition: opacity 1.5s ease;
 }
 
 .app-content.ready {
   opacity: 1;
+}
+
+@keyframes fazer1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -80px;
+    opacity: 0;
+  }
+}
+
+@keyframes fazer2 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100px;
+    opacity: 0;
+  }
+}
+
+@keyframes fazer3 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -50px;
+    opacity: 0;
+  }
+}
+
+@keyframes fazer4 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -150px;
+    opacity: 0;
+  }
+}
+
+@keyframes speeder {
+  0% {
+    transform: translate(2px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -3px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-2px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 3px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-1px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-2px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(2px, 1px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes lf {
+  0% {
+    left: 200%;
+  }
+  100% {
+    left: -200%;
+    opacity: 0;
+  }
+}
+@keyframes lf2 {
+  0% {
+    left: 200%;
+  }
+  100% {
+    left: -200%;
+    opacity: 0;
+  }
+}
+@keyframes lf3 {
+  0% {
+    left: 200%;
+  }
+  100% {
+    left: -100%;
+    opacity: 0;
+  }
+}
+@keyframes lf4 {
+  0% {
+    left: 200%;
+  }
+  100% {
+    left: -100%;
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .loadingPage {
@@ -136,82 +259,6 @@
     animation-delay: -1s;
   }
 
-  @keyframes fazer1 {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: -80px;
-      opacity: 0;
-    }
-  }
-
-  @keyframes fazer2 {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: -100px;
-      opacity: 0;
-    }
-  }
-
-  @keyframes fazer3 {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: -50px;
-      opacity: 0;
-    }
-  }
-
-  @keyframes fazer4 {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: -150px;
-      opacity: 0;
-    }
-  }
-
-  @keyframes speeder {
-    0% {
-      transform: translate(2px, 1px) rotate(0deg);
-    }
-    10% {
-      transform: translate(-1px, -3px) rotate(-1deg);
-    }
-    20% {
-      transform: translate(-2px, 0px) rotate(1deg);
-    }
-    30% {
-      transform: translate(1px, 2px) rotate(0deg);
-    }
-    40% {
-      transform: translate(1px, -1px) rotate(1deg);
-    }
-    50% {
-      transform: translate(-1px, 3px) rotate(-1deg);
-    }
-    60% {
-      transform: translate(-1px, 1px) rotate(0deg);
-    }
-    70% {
-      transform: translate(3px, 1px) rotate(-1deg);
-    }
-    80% {
-      transform: translate(-2px, -1px) rotate(1deg);
-    }
-    90% {
-      transform: translate(2px, 1px) rotate(0deg);
-    }
-    100% {
-      transform: translate(1px, -2px) rotate(-1deg);
-    }
-  }
-
   .longfazers {
     position: absolute;
     width: 100%;
@@ -246,53 +293,6 @@
         animation: lf4 0.5s linear infinite;
         animation-delay: -3s;
       }
-    }
-  }
-
-  @keyframes lf {
-    0% {
-      left: 200%;
-    }
-    100% {
-      left: -200%;
-      opacity: 0;
-    }
-  }
-  @keyframes lf2 {
-    0% {
-      left: 200%;
-    }
-    100% {
-      left: -200%;
-      opacity: 0;
-    }
-  }
-  @keyframes lf3 {
-    0% {
-      left: 200%;
-    }
-    100% {
-      left: -100%;
-      opacity: 0;
-    }
-  }
-  @keyframes lf4 {
-    0% {
-      left: 200%;
-    }
-    100% {
-      left: -100%;
-      opacity: 0;
-    }
-  }
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-
-    to {
-      opacity: 0;
-      visibility: hidden;
     }
   }
 }

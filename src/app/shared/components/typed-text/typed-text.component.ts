@@ -1,12 +1,12 @@
 import { Component, OnDestroy, OnInit, signal, WritableSignal } from '@angular/core';
-import { introduction } from '../../../../../data';
+import { introduction } from '@data';
 
 @Component({
   selector: 'app-typed-text',
   standalone: true,
   imports: [],
   templateUrl: './typed-text.component.html',
-  styleUrls: ['./typed-text.component.scss']
+  styleUrls: ['./typed-text.component.css']
 })
 export class TypedTextComponent implements OnInit, OnDestroy {
 

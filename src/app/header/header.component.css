@@ -1,11 +1,4 @@
-@use "../../styles.scss" as *;
-
-$transition-duration: 0.25s;
-$header-mobile-breakpoint: 772px;
-
-@mixin smooth-transition($properties...) {
-  transition: $properties $transition-duration ease-in-out;
-}
+@import "@styles";
 
 .header {
   position: fixed;
@@ -14,11 +7,10 @@ $header-mobile-breakpoint: 772px;
   max-width: 1920px;
   margin: 0 auto;
   z-index: 1000;
-  background-color: $background;
-  border-bottom: 2.5px solid $borderColor;
-  height: clamp(2.7em, 5vw, 5em);
-  @include smooth-transition(transform);
-
+  background-color: var(--background);
+  border-bottom: 2.5px solid var(--borderColor);
+  height: clamp(2.7em, 3vw, 3em);
+  transition: 0.25s ease-in-out;
   &.hidden {
     transform: translateY(-100%);
   }
@@ -33,9 +25,9 @@ $header-mobile-breakpoint: 772px;
     margin: 20px 30px;
     font-weight: bold;
     text-decoration: none;
-    color: $textColor;
+    color: var(--textColor);
     transition: all 0.3s ease;
-    @media (max-width: $header-mobile-breakpoint) {
+    @media (max-width: 772px) {
       display: none;
     }
 
@@ -48,7 +40,7 @@ $header-mobile-breakpoint: 772px;
   .header-logo:hover {
     transform: scale(1.1);
     .header-logo-name {
-      color: $backgroundSecondaryColor;
+      color: var(--backgroundSecondaryColor);
     }
   }
 
@@ -70,33 +62,33 @@ $header-mobile-breakpoint: 772px;
 
       a {
         display: block;
-        padding: clamp(0.65em, 1.2vw, 2.2em) 25px;
+        padding: clamp(0.4em, 0.5vw, 0.5em) 25px;
         text-decoration: none;
-        color: $textColor;
+        color: var(--textColor);
         border-radius: 10px;
         font-size: clamp(0.95rem, 1.18vw, 1.4rem);
 
         &:hover,
         &:focus {
-          background-color: $backgroundSecondaryColor;
-          color: $background;
-          @include smooth-transition(all);
+          background-color: var(--backgroundSecondaryColor);
+          color: var(--background);
+          transition: all 0.25s ease-in-out;
         }
       }
     }
 
-    @media (max-width: $header-mobile-breakpoint) {
+    @media (max-width: 772px) {
       position: fixed;
       top: 2.81em;
       right: -210px;
       height: 100vh;
       width: 210px;
-      background-color: $background;
-      border-left: 2.5px solid $borderColor;
+      background-color: var(--background);
+      border-left: 2.5px solid var(--borderColor);
       flex-direction: column;
       padding-top: 40px;
       overflow-y: auto;
-      @include smooth-transition(right);
+      transition: right 0.25s ease-in-out;
 
       li {
         a {
@@ -109,7 +101,7 @@ $header-mobile-breakpoint: 772px;
   .header-menu-icon {
     display: none;
 
-    @media (max-width: $header-mobile-breakpoint) {
+    @media (max-width: 772px) {
       display: block;
       position: absolute;
       top: 1.35rem;
@@ -118,19 +110,19 @@ $header-mobile-breakpoint: 772px;
       transform: scale(0.95);
 
       .navicon {
-        background: $textColor;
+        background: var(--textColor);
         position: absolute;
-        @include smooth-transition(all);
+        transition: all 0.25s ease-in-out;
 
         &:before,
         &:after {
           content: "";
           display: block;
           height: 2.5px;
-          background: $textColor;
+          background: var(--textColor);
           position: absolute;
           width: 28px;
-          @include smooth-transition(all);
+          transition: all 0.25s ease-in-out;
         }
 
         &:before {
@@ -158,7 +150,7 @@ $header-mobile-breakpoint: 772px;
     }
   }
 
-  @media (min-width: $header-mobile-breakpoint) {
+  @media (min-width: 772px) {
     display: flex;
     align-items: center;
     justify-content: space-between;

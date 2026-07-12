@@ -1,12 +1,12 @@
-@use "../../styles.scss" as *;
+@import "@styles";
 
 .projects-section {
   margin: 0 auto;
   width: 90%;
   padding: 20px 10px;
   overflow: hidden;
-  border-bottom: 3px solid $borderColor;
-  border-top: 3px solid $borderColor;
+  border-bottom: 3px solid var(--borderColor);
+  border-top: 3px solid var(--borderColor);
 }
 
 .projects-header {
@@ -25,14 +25,14 @@
 .project-card {
   border-radius: 15px;
   overflow: hidden;
-  background-color: $background;
-  border: 3px solid $borderColor;
+  background-color: var(--background);
+  border: 3px solid var(--borderColor);
   transition: all 0.4s cubic-bezier(0.25, 1, 0.35, 1);
   margin-bottom: 45px;
 
   &:hover {
     transform: scale(1.02);
-    box-shadow: 0px 0px 6px 0px $boxShadow;
+    box-shadow: 0px 0px 6px 0px var(--boxShadow);
 
     .project-image img {
       transform: scale(1.1) rotate(2deg);
@@ -48,7 +48,7 @@
   height: 180px;
   position: relative;
   overflow: hidden;
-  border-bottom: 3px solid $borderColor;
+  border-bottom: 3px solid var(--borderColor);
 
   img {
     width: 100%;
@@ -73,13 +73,13 @@
 }
 
 .project-link {
-  color: $background;
-  background-color: $backgroundSecondaryColor;
+  color: var(--background);
+  background-color: var(--backgroundSecondaryColor);
   text-decoration: none;
   font-weight: 700;
   font-size: clamp(0.75rem, 1vw, 1.35rem);
   padding: 0.8rem 1.5rem;
-  border: 3px solid $backgroundSecondaryColor;
+  border: 3px solid var(--backgroundSecondaryColor);
   border-radius: 30px;
   transition: all 0.3s ease;
   text-transform: uppercase;
@@ -96,18 +96,18 @@
 
 .project-title {
   font-size: clamp(0.9rem, 1.2vw, 1.3rem);
-  color: $textColor;
+  color: var(--textColor);
   margin-bottom: 0.8rem;
 }
 
 .project-description {
   line-height: 1.2;
   font-size: clamp(0.75rem, 0.9vw, 1.05rem);
-  color: $textColor;
+  color: var(--textColor);
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   line-height: 1.5;
-  border-bottom: 3px solid $borderColor;
+  border-bottom: 3px solid var(--borderColor);
 }
 
 .project-tags {
@@ -116,29 +116,29 @@
   gap: 0.6rem;
 
   .tag {
-    background-color: $background;
-    border: 2.5px solid $borderColor;
-    color: $textColor;
+    background-color: var(--background);
+    border: 2.5px solid var(--borderColor);
+    color: var(--textColor);
     padding: 0.25rem 0.75rem;
     font-size: clamp(0.7rem, 1vw, 0.9rem);
     transition: all 0.3s ease;
 
     &:hover {
-      box-shadow: 0px 0px 12px 0px $boxShadow;
+      box-shadow: 0px 0px 12px 0px var(--boxShadow);
     }
   }
 }
 
 .projects-button {
-  background-color: $background;
+  background-color: var(--background);
   text-decoration: none;
-  color: $textColor;
+  color: var(--textColor);
   font-weight: 600;
   width: max-content;
   padding: 16px 25px;
   text-transform: uppercase;
   border-radius: 15px;
-  border: 2.5px solid $borderColor;
+  border: 2.5px solid var(--borderColor);
   text-align: center;
   text-decoration: none;
   margin: 0 auto;
@@ -150,7 +150,7 @@
 }
 .projects-button:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 12px 0px $boxShadow;
+  box-shadow: 0px 0px 12px 0px var(--boxShadow);
 }
 
 @media (max-width: 1200px) {

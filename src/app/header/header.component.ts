@@ -1,12 +1,12 @@
 import { Component} from '@angular/core';
-import { introduction, myJourney, projectsSection, skillsSection, socialMediaLinks } from '../../../data';
+import { introduction, myJourney, projectsSection, skillsSection, socialMediaLinks } from '@data';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
+  styleUrl: './header.component.css',
 })
 export class HeaderComponent {
   

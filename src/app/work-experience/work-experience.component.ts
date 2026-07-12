@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import { myJourney } from '../../../data';
+import { myJourney } from '@data';
 
 
 @Component({
@@ -7,7 +7,7 @@ import { myJourney } from '../../../data';
   standalone: true,
   imports: [],
   templateUrl: './work-experience.component.html',
-  styleUrl: './work-experience.component.scss'
+  styleUrl: './work-experience.component.css'
 })
 export class WorkExperienceComponent {
   

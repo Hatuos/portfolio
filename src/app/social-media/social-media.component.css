@@ -1,0 +1,39 @@
+@import "@styles";
+
+.social-media {
+  border: 2.5px solid var(--borderColor);
+  border-radius: 25px;
+}
+
+.logos-container {
+  padding: 15px 15px 15px;
+  font-size: clamp(1rem, 1.35vw, 1.35rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.icon-button {
+  vertical-align: middle;
+  text-decoration: none;
+  color: var(--textColor);
+  cursor: pointer;
+  margin: 0 6px;
+
+  svg {
+    height: 1.50em;
+    width: 1.50em;
+  }
+}
+
+.icon-button:hover {
+  color: var(--socialMediaHoverBG);
+  transition: 0.2s ease-in;
+}
+
+@media (max-width: 768px) {
+  .social-media {
+    text-align: center;
+  }
+}

@@ -1,26 +1,31 @@
 @if (socialMediaLinks.display) {
-<section class="social-media">
-  <p>
-    Contact me: 
-    @if (socialMediaLinks.linkedin.trim() != '') {
-    <a
-      [href]="socialMediaLinks.linkedin"
-      class="icon-button linkedin"
-      target="_blank"
-      rel="noreferrer noopener"
-    >
-      <fa-icon [icon]="faLinkedin" size="xl"></fa-icon>
-    </a>
-    } @if (socialMediaLinks.github.trim() != '') {
-    <a
-      [href]="socialMediaLinks.github"
-      class="icon-button github"
-      target="_blank"
-      rel="noreferrer noopener"
-    >
-      <fa-icon [icon]="faGithub" size="xl"></fa-icon>
-    </a>
-    }
-  </p>
-</section>
+  <section class="social-media">
+    <div class="logos-container">
+      Contact me:
+      @if (socialMediaLinks.linkedin.trim() != "") {
+        <a
+          [href]="socialMediaLinks.linkedin"
+          class="icon-button linkedin"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <svg>
+            <use xlink:href="./svg/sprite.svg#linkedin" />
+          </svg>
+        </a>
+      }
+      @if (socialMediaLinks.github.trim() != "") {
+        <a
+          [href]="socialMediaLinks.github"
+          class="icon-button github"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <svg>
+            <use xlink:href="./svg/sprite.svg#github" />
+          </svg>
+        </a>
+      }
+    </div>
+  </section>
 }

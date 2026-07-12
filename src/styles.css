@@ -1,22 +1,57 @@
-@forward "./sass/globals/global.scss";
+:root {
+  /* Button colors */
+  --buttonColor: #f8b400;
+  --buttonHover: #f8b400;
+
+  /* Text */
+  --textColor: #f5f5f5;
+  --subTitle: #f5f5f5;
+  --appLink: #f5f5f5;
+
+  /* Box shadows */
+  --boxShadow: #f8b400;
+
+  /* Borders */
+  --progressBarBackground: rgb(243, 239, 239);
+  --borderColor: #f8b400;
+
+  /* Hovers */
+  --headerHoverBG: #8c43ce;
+  --contactDetailHoverTS: #b5b5b5;
+  --socialMediaHoverBG: #f8b400;
+
+  /* Backgrounds */
+  /*--background: #1c1c20;*/
+  --background: #252423;
+  --backgroundSecondaryColor: #f8b400;
+  --appHeaderBG: #f8b400;
+  --appHeaderTextColor: #1c1c20;
+
+  /* Social media icons */
+  --linkedin: #0e76a8;
+  --github: #333;
+}
 
 @font-face {
   font-family: "Roboto";
-  src: local("Roboto"),
+  src:
+    local("Roboto"),
     url("../public/fonts/Roboto-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Amita";
-  src: local("Amita"),
+  src:
+    local("Amita"),
     url("../public/fonts/Amita-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Megrim";
-  src: local("Megrim"),
+  src:
+    local("Megrim"),
     url("../public/fonts/Megrim-Regular.ttf") format("truetype");
   font-display: swap;
 }
@@ -26,7 +61,7 @@ code {
 }
 
 html {
-  font: 20px / 23px Roboto, "Roboto", sans-serif;
+  font: 20px / 23px Roboto,"Roboto",sans-serif;
   font-size: 20px;
   text-size-adjust: none;
   -webkit-text-size-adjust: none;
@@ -36,12 +71,12 @@ body {
   font: inherit;
   scroll-behavior: smooth;
   margin: 0;
-  background: #1A1A1D;
+  background: #1a1a1d;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0.6rem;
 }
 

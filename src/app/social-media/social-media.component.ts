@@ -1,19 +1,13 @@
 import { Component } from '@angular/core';
-import { socialMediaLinks } from '../../../data';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
+import { socialMediaLinks } from '@data';
 
 @Component({
   selector: 'app-social-media',
   standalone: true,
-  imports: [
-    FontAwesomeModule
-  ],
+  imports: [],
   templateUrl: './social-media.component.html',
-  styleUrl: './social-media.component.scss'
+  styleUrl: './social-media.component.css'
 })
 export class SocialMediaComponent {
   socialMediaLinks = socialMediaLinks;
-  faLinkedin = faLinkedin;
-  faGithub = faGithub;
 }
