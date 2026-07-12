@@ -23,86 +23,86 @@ const skillsSection = {
   backendSoftwareSkills: [
     {
       skillName: 'Java',
-      badgeURL : 'https://img.shields.io/badge/Jakarta_EE-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white',
+      badgeURL : 'https://img.shields.io/badge/Jakarta_EE-252423.svg?style=for-the-badge&logo=openjdk&logoColor=%23ED8B00',
       reference: 'https://www.oracle.com/java/'
     },
     {
       skillName: 'Spring',
-      badgeURL : 'https://img.shields.io/badge/Spring-F2F4F9?style=for-the-badge&logo=spring',
+      badgeURL : 'https://img.shields.io/badge/Spring-252423?style=for-the-badge&logo=spring',
       reference: 'https://spring.io/'
     },
     {
       skillName: 'SpringBoot',
-      badgeURL : 'https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot',
+      badgeURL : 'https://img.shields.io/badge/Spring_Boot-252423?style=for-the-badge&logo=spring-boot',
       reference: 'https://spring.io/projects/spring-boot'
     },
     {
       skillName: 'Hibernate',
-      badgeURL : 'https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=fff',
+      badgeURL : 'https://img.shields.io/badge/Hibernate-252423?style=for-the-badge&logo=hibernate&logoColor=59666C',
       reference: 'https://spring.io/'
     },
     {
       skillName: 'Python',
-      badgeURL : 'https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue',
+      badgeURL : 'https://img.shields.io/badge/Python-252423?style=for-the-badge&logo=python&logoColor=blue',
       reference: 'https://www.python.org/'
     }
   ],
   frontendSoftwareSkills: [
     {
       skillName: 'TypeScript',
-      badgeURL : 'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
+      badgeURL : 'https://img.shields.io/badge/typescript-252423.svg?style=for-the-badge&logo=typescript&logoColor=23007ACC',
       reference: 'https://www.typescriptlang.org/'
     },
     {
       skillName: 'Node.js',
-      badgeURL : 'https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
+      badgeURL : 'https://img.shields.io/badge/Node.js-252423?style=for-the-badge&logo=nodedotjs&logoColor=339933',
       reference: 'https://nodejs.org/'
     },
     {
       skillName: 'PNPM',
-      badgeURL : 'https://img.shields.io/badge/pnpm-F69220?style=for-the-badge&logo=pnpm&logoColor=fff',
+      badgeURL : 'https://img.shields.io/badge/pnpm-252423?style=for-the-badge&logo=pnpm&logoColor=F69220',
       reference: 'https://pnpm.io/'
     },
     {
       skillName: 'Angular',
-      badgeURL : 'https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white',
+      badgeURL : 'https://img.shields.io/badge/Angular-252423?style=for-the-badge&logo=angular&logoColor=B5314C',
       reference: 'https://angular.dev/'
     }
   ],
   databaseSkills: [
     {
       skillName: 'Oracle',
-      badgeURL : 'https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white',
+      badgeURL : 'https://img.shields.io/badge/Oracle-252423?style=for-the-badge',
       reference: 'https://www.oracle.com/'
     },
     
     {
       skillName: 'MySQL',
-      badgeURL : 'https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white',
+      badgeURL : 'https://img.shields.io/badge/mysql-252423.svg?style=for-the-badge&logo=mysql&logoColor=4479A1',
       reference: 'https://www.mysql.com/'
     }
   ],
   toolsSoftwareSkills: [
     {
       skillName: 'Docker',
-      badgeURL : 'https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=fff',
+      badgeURL : 'https://img.shields.io/badge/Docker-252423?style=for-the-badge&logo=docker&logoColor=2496ED',
       reference: 'https://www.docker.com/'
     },
     {
 
       skillName: 'Jenkins',
-      badgeURL : 'https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white',
+      badgeURL : 'https://img.shields.io/badge/Jenkins-252423?style=for-the-badge&logo=jenkins&logoColor=D24939',
       reference: 'https://www.jenkins.io/'
     },
     {
 
       skillName: 'Postman',
-      badgeURL : 'https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white',
+      badgeURL : 'https://img.shields.io/badge/Postman-252423?style=for-the-badge&logo=postman&logoColor=FF6C37',
       reference: 'https://www.postman.com/'
     },
     {
       skillName: 'SonarQube',
-      badgeURL : 'https://img.shields.io/badge/SonarQube-126ED3?style=for-the-badge&logo=sonarqubecloud&logoColor=fff',
+      badgeURL : 'https://img.shields.io/badge/SonarQube-252423?style=for-the-badge&logo=sonarqubecloud&logoColor=126ED3',
       reference: 'https://www.sonarsource.com/'
     }
   ],
