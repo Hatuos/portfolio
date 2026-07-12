@@ -1,7 +1,7 @@
 :root {
   /* Button colors */
-  --buttonColor: #f8b400;
-  --buttonHover: #f8b400;
+  --buttonColor: #2DD46F;
+  --buttonHover: #2DD46F;
 
   /* Text */
   --textColor: #f5f5f5;
@@ -9,22 +9,22 @@
   --appLink: #f5f5f5;
 
   /* Box shadows */
-  --boxShadow: #f8b400;
+  --boxShadow: #2DD46F;
 
   /* Borders */
   --progressBarBackground: rgb(243, 239, 239);
-  --borderColor: #f8b400;
+  --borderColor: #2DD46F;
 
   /* Hovers */
   --headerHoverBG: #8c43ce;
   --contactDetailHoverTS: #b5b5b5;
-  --socialMediaHoverBG: #f8b400;
+  --socialMediaHoverBG: #2DD46F;
 
   /* Backgrounds */
   /*--background: #1c1c20;*/
   --background: #252423;
-  --backgroundSecondaryColor: #f8b400;
-  --appHeaderBG: #f8b400;
+  --backgroundSecondaryColor: #2DD46F;
+  --appHeaderBG: #2DD46F;
   --appHeaderTextColor: #1c1c20;
 
   /* Social media icons */
@@ -85,6 +85,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fbc901;
+  background: #2DD46F;
   border-radius: 100vw;
 }
