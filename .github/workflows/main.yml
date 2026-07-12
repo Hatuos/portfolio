@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.3
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -19,7 +19,7 @@ jobs:
           version: 11.5.0
         
       - name: Setup NodeJS
-        uses: actions/setup-node@v4.1.0
+        uses: actions/setup-node@v6.4.0
         with:
           node-version: "22"
           cache: "pnpm"
@@ -29,11 +29,21 @@ jobs:
         
       - name: Build app bundle
         run: npm run build:prod
-        
-      - name: Deploy to pages
-        uses: crazy-max/ghaction-github-pages@v4.1.0
+
+      - name: Artifact upload
+        uses: actions/upload-pages-artifact@v5
         with:
-          build_dir: dist/portfolio/browser
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          name: github-pages
+          path: dist/portfolio/browser
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write # To deploy to Pages
+      id-token: write # To verify the deployment originates from an appropiate source
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Github
+        id: deployment
+        uses: actions/deploy-pages@v5
 
