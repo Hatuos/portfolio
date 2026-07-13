@@ -21,7 +21,6 @@
 
   .header-logo {
     font-size: clamp(1.4rem, 1.8vw, 2rem);
-    font-family: "Amita";
     margin: 20px 30px;
     font-weight: bold;
     text-decoration: none;
@@ -38,7 +37,6 @@
   }
 
   .header-logo:hover {
-    transform: scale(1.1);
     .header-logo-name {
       color: var(--backgroundSecondaryColor);
     }

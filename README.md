@@ -1,7 +1,7 @@
 <h1 align="center">Portfolio</h1>
 <p align="center">
   <i>
-I`m developing this portfolio as a personal Angular proyect. Taking it as an opportunity to test things with Angular as the framework is bringing many new features.</i>
+I`m developing this portfolio as a personal Angular project. Taking it as an opportunity to test things with Angular as the framework is bringing many new features.</i>
 </p>
 
 ---
@@ -33,7 +33,7 @@ The inspiration for the design and theme of this project is not purely mine, I c
 
 If anyone wishes to use this code for themselves or make improvements to the project, they are welcome to do so. I only ask that, if the project is reused, credit be given to the source(s) from which it came.
 
-As you all know, **plagiarism is bad**. It's always disheartening to find out that someone has copied your project without giving you any credit. As I have made an attribution to others, **I hope you will do the same with this and all projects that offer you a base of ideas.**
+As you all know, **plagiarism is bad**. It's always disheartening to find out that someone has copied your project without giving you any credit. **As I have made an attribution to others, I hope you will do the same with this and all projects that offer you a base of ideas.**
 
 ---
 

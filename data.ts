@@ -1,7 +1,7 @@
 const introduction = {
     username: 'Samir',
     title: 'Hello World!',
-    welcomeAvatar: "img/profileImage.png",
+    welcomeAvatar: "img/profileImage.webp",
     subTitle:
     `I\'m looking to collaborate on whatever helps me learn.
     Ask me about whatever you want related to computer engineering, I may not know the answer but I'm sure I'll learn something.`,

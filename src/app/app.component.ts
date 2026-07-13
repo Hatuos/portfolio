@@ -36,6 +36,7 @@ export class AppComponent {
     window.scrollTo(0, 0);
     this.storage.set(this.INTRO_ANIMATION_KEY, 'true');
     this.showAppContent.set(true);
+    this.showInitAnimation.set(false);
   }
 
   ngOnInit() {

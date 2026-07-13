@@ -1,7 +1,7 @@
 :root {
   /* Button colors */
-  --buttonColor: #2DD46F;
-  --buttonHover: #2DD46F;
+  --buttonColor: #3BEA7F;
+  --buttonHover: #3BEA7F;
 
   /* Text */
   --textColor: #f5f5f5;
@@ -9,22 +9,22 @@
   --appLink: #f5f5f5;
 
   /* Box shadows */
-  --boxShadow: #2DD46F;
+  --boxShadow: #3BEA7F;
 
   /* Borders */
   --progressBarBackground: rgb(243, 239, 239);
-  --borderColor: #2DD46F;
+  --borderColor: #3BEA7F;
 
   /* Hovers */
   --headerHoverBG: #8c43ce;
   --contactDetailHoverTS: #b5b5b5;
-  --socialMediaHoverBG: #2DD46F;
+  --socialMediaHoverBG: #3BEA7F;
 
   /* Backgrounds */
   /*--background: #1c1c20;*/
   --background: #252423;
-  --backgroundSecondaryColor: #2DD46F;
-  --appHeaderBG: #2DD46F;
+  --backgroundSecondaryColor: #3BEA7F;
+  --appHeaderBG: #3BEA7F;
   --appHeaderTextColor: #1c1c20;
 
   /* Social media icons */
@@ -37,14 +37,6 @@
   src:
     local("Roboto"),
     url("../public/fonts/Roboto-Regular.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Amita";
-  src:
-    local("Amita"),
-    url("../public/fonts/Amita-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -85,6 +77,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2DD46F;
+  background: #3BEA7F;
   border-radius: 100vw;
 }
