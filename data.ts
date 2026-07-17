@@ -39,7 +39,7 @@ const skillsSection = {
     {
       skillName: 'Hibernate',
       badgeURL : 'https://img.shields.io/badge/Hibernate-252423?style=for-the-badge&logo=hibernate&logoColor=59666C',
-      reference: 'https://spring.io/'
+      reference: 'https://hibernate.org/'
     },
     {
       skillName: 'Python',
@@ -49,19 +49,24 @@ const skillsSection = {
   ],
   frontendSoftwareSkills: [
     {
-      skillName: 'TypeScript',
-      badgeURL : 'https://img.shields.io/badge/typescript-252423.svg?style=for-the-badge&logo=typescript&logoColor=23007ACC',
-      reference: 'https://www.typescriptlang.org/'
-    },
-    {
       skillName: 'Node.js',
       badgeURL : 'https://img.shields.io/badge/Node.js-252423?style=for-the-badge&logo=nodedotjs&logoColor=339933',
       reference: 'https://nodejs.org/'
     },
     {
+      skillName: 'NPM',
+      badgeURL : 'https://img.shields.io/badge/npm-252423?style=for-the-badge&logo=npm&logoColor=CB3837',
+      reference: 'https://www.npmjs.com/'
+    },
+    {
       skillName: 'PNPM',
       badgeURL : 'https://img.shields.io/badge/pnpm-252423?style=for-the-badge&logo=pnpm&logoColor=F69220',
       reference: 'https://pnpm.io/'
+    },
+    {
+      skillName: 'TypeScript',
+      badgeURL : 'https://img.shields.io/badge/typescript-252423.svg?style=for-the-badge&logo=typescript&logoColor=23007ACC',
+      reference: 'https://www.typescriptlang.org/'
     },
     {
       skillName: 'Angular',
