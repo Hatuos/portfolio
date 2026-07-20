@@ -1,23 +1,11 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { TestBed } from '@angular/core/testing';
+import { describe, beforeEach, it, expect } from 'vitest';
 import { WorkExperienceComponent } from './work-experience.component';
 
 describe('WorkExperienceComponent', () => {
-  let component: WorkExperienceComponent;
-  let fixture: ComponentFixture<WorkExperienceComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [WorkExperienceComponent]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(WorkExperienceComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should create the WorkExperienceComponent', () => {
+    const fixture = TestBed.createComponent(WorkExperienceComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
   });
 });
