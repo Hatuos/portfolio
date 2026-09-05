@@ -19,17 +19,41 @@
   text-decoration: none;
   color: var(--textColor);
   cursor: pointer;
-  margin: 0 6px;
+  margin: 0 4px;
+  width: 2.1em;
+  height: 2.1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease-in, color 0.2s ease-in,
+    box-shadow 0.2s ease-in;
 
   svg {
-    height: 1.50em;
-    width: 1.50em;
+    height: 1.65em;
+    width: 1.65em;
   }
 }
 
 .icon-button:hover {
   color: var(--socialMediaHoverBG);
-  transition: 0.2s ease-in;
+  border-color: var(--socialMediaHoverBG);
+  box-shadow: 0 0 8px 0 var(--boxShadow);
+}
+
+.icon-button.linkedin {
+  border-radius: 8px;
+
+  svg {
+    height: 1.45em;
+    width: 1.45em;
+  }
+}
+
+.icon-button:focus-visible {
+  outline: 2px solid var(--socialMediaHoverBG);
+  outline-offset: 3px;
 }
 
 @media (max-width: 768px) {
