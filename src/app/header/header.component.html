@@ -30,4 +30,13 @@
     </li>
     }
   </ul>
+  <button
+    class="theme-toggle"
+    type="button"
+    (click)="toggleTheme()"
+    [attr.aria-label]="isLightTheme() ? 'Activate dark theme' : 'Activate light theme'"
+    [attr.aria-pressed]="isLightTheme()"
+  >
+    <span class="theme-toggle-icon" aria-hidden="true"></span>
+  </button>
 </header>

@@ -25,11 +25,33 @@
   --background: #252423;
   --backgroundSecondaryColor: #3BEA7F;
   --appHeaderBG: #3BEA7F;
-  --appHeaderTextColor: #1c1c20;
+  --themeToggleBackground: #3BEA7F;
+  --themeToggleIcon: #f5f5f5;
+  --scrollbarTrack: #141414;
+  --scrollbarThumb: #3BEA7F;
 
   /* Social media icons */
   --linkedin: #0e76a8;
   --github: #333;
+}
+
+html.light-theme {
+  --background: #EDE9DC;
+  --backgroundSecondaryColor: #006B4F;
+  --appHeaderBG: #006B4F;
+  --textColor: #202124;
+  --subTitle: #202124;
+  --appLink: #202124;
+  --borderColor: #006B4F;
+  --boxShadow: #006B4F;
+  --progressBarBackground: #4b4b4b;
+  --headerHoverBG: #d7eaff;
+  --contactDetailHoverTS: #5f6368;
+  --socialMediaHoverBG: #006B4F;
+  --themeToggleBackground: #006B4F;
+  --themeToggleIcon: #EDE9DC;
+  --scrollbarTrack: #e2e5e8;
+  --scrollbarThumb: #006B4F;
 }
 
 @font-face {
@@ -57,13 +79,15 @@ html {
   font-size: 20px;
   text-size-adjust: none;
   -webkit-text-size-adjust: none;
+  scrollbar-color: var(--scrollbarThumb) var(--scrollbarTrack);
 }
 
 body {
   font: inherit;
   scroll-behavior: smooth;
   margin: 0;
-  background: #1a1a1d;
+  background: var(--background);
+  transition: background-color 0.25s ease-in-out;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -73,10 +97,12 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #141414;
+  background: var(--scrollbarTrack);
+  transition: background-color 0.25s ease-in-out;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3BEA7F;
+  background: var(--scrollbarThumb);
   border-radius: 100vw;
+  transition: background-color 0.25s ease-in-out;
 }

@@ -9,7 +9,7 @@
   background-color: var(--background);
   color: var(--textColor);
   opacity: 0;
-  transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease, background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 .app-content.ready {
