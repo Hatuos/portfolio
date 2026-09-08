@@ -36,7 +36,7 @@ export class SkillsComponent {
   }
 
   private getBadgeURL(badgeURL: string, isLightTheme: boolean): string {
-    return isLightTheme ? badgeURL.replace(/252423/g, 'EDE9DC') : badgeURL;
+    return isLightTheme ? badgeURL.replace(/252423/g, 'F5F5F0') : badgeURL;
   }
 
 }
